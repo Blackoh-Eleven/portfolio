@@ -5,6 +5,123 @@
 
 body{
     width: 100%;
-    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/harder.png);
+    background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png);
     background-size: cover;
+}
+
+
+header{
+    width: 100%;
+    height: 5em;
+    border-bottom: 1px solid purple;
+}
+
+
+.logo{
+    display: flex;
+    height: 5em;
+}
+
+.img-logo{
+    position: relative;
+    left: 10em;
+    top: 0.5em;
+    width: 9%;
+    border-radius:10px;
+    opacity: 0;
+    animation: fading 1s ease forwards;
+    animation-delay:1s ;
+}
+
+@keyframes fading{
+    to{
+        opacity: 1;
+        transform: translateX(1em);
+    }
+}
+
+@media (max-width:450px) {
+    .img-logo{
+        display: flex;
+        justify-content: flex-end;
+        left: 0;
+        width: 40%;
+    }
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    font-size: clamp(1em,2vw,2em);
+    width: 40em;
+    color: white;
+    opacity: 0;
+    animation: fadein 1s ease forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+}
+
+@keyframes fadein{
+    to{
+        opacity: 1;
+        transform: translateX(-1em);
+    }
+}
+
+ul :hover{
+    color: rgb(255, 0, 255);
+    background:linear-gradient(120deg,rgba(255, 0, 255,0.4),rgba(233, 153, 233,0.2));
+    padding: 0.5em;
+    border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside{
+    height: 40px;
+    width: 40px;
+    background: rgb(255, 0, 255);
 }
