@@ -85,9 +85,7 @@ ul :hover{
 
 .fa-solid{
     display: none;
-    color:rgba(177, 13, 202,0.8);
-    padding-top: 0.2em;
-    cursor: pointer;
+
 
 }
 
@@ -95,6 +93,9 @@ ul :hover{
     .fa-solid{
         display: block;
         font-size: 2.5em;
+        color:rgba(177, 13, 202,0.8);
+        padding-top: 0.2em;
+        cursor: pointer;
     }
     ul{
         position: relative;
