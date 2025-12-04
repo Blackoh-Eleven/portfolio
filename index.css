@@ -7,7 +7,7 @@ body{
     width: 100%;
     background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png);
     background-size: cover;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -140,7 +140,6 @@ hero{
 }
 
 .nameclass{
-    /* color: rgb(255, 146, 255); */
     color:#ffffff;
 }
 .blackoh{
@@ -166,8 +165,8 @@ aside{
 }
 
 .leftbox{
-    width:20%;
-    height: 8em;
+    width:clamp(3em,15em,15em);
+    height: fit-content;
     padding: 1em;
     display: flex;
     justify-content: center;
@@ -182,6 +181,16 @@ aside{
     color:white;
     border-radius:10px;
     transform: rotate(10deg);
+    opacity: 0;
+    animation:leftfading 1s ease forwards;
+    animation-delay:2.5s;
+}
+
+@keyframes leftfading{
+    to{
+        opacity: 1;
+        transform:rotate(10deg) translateX(1em);
+    }
 }
 
 
@@ -211,15 +220,15 @@ aside{
 }
 
 .rightbox{
-    width:20%;
-    height: 8em;
+    width:clamp(3em,15em,15em);
+    height: fit-content;
     padding: 1em;
     display: flex;
     justify-content: center;
     align-items:center;
     font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: clamp(2px,16px,16px);
     background: linear-gradient(135deg,rgba(255,0,255,0.3),rgba(255, 184, 255, 0.5));
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -227,6 +236,87 @@ aside{
     color:white;
     border-radius:10px;
     transform: rotate(-10deg);
+    opacity: 0;
+    animation: rightfade 1s forwards;
+    animation-delay:3s;
+}
+
+
+
+@keyframes rightfade{
+    to{
+        opacity: 1;
+        transform:rotate(-10deg) translateX(-1em);
+    }
+}
+
+
+@media (max-width:970px) {
+    aside{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .rightbox{
+        z-index: 0;
+    }
+
+    .imgdiv{
+        width: fit-content;
+        z-index: 4;
+    }
+
+}
+
+@media (max-width:600px) {
+
+    @keyframes rightfade{
+    to{
+        opacity: 1;
+        transform:rotate(0deg) translateX(-1em);
+    }
+}
+
+    @keyframes leftfading{
+    to{
+        opacity: 1;
+        transform:rotate(0deg) translateX(-1em);
+    }
+}
+
+    @keyframes rightfade{
+    to{
+        opacity: 1;
+        transform:rotate(0deg) translateX(-1em);
+    }
+}
+
+    aside{
+        
+        display: grid;
+        height: fit-content;
+        padding-left: 1em;
+        align-items:center;
+        justify-content: center
+    }
+
+    .rightbox{
+        /* font-size: clamp(4px,1vw,0.2em); */
+        transform: rotate(0deg);
+        
+        /* height: fit-content; */
+        width: fit-content;
+    }
+
+    .leftbox{
+        width: fit-content;
+        transform:rotate(0deg);
+        /* height: fit-content; */
+    }
+    .imgdiv{
+        width: fit-content;
+        /* padding: 3em; */
+    }
 }
 
 
