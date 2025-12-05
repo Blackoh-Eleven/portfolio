@@ -90,6 +90,8 @@ ul :hover{
 }
 
 @media (max-width :500px) {
+
+
     .fa-solid{
         display: block;
         font-size: 2.5em;
@@ -99,8 +101,8 @@ ul :hover{
     }
     ul{
         position: relative;
-        left: 2000px;
-        display: block;
+        /* left: 2000px; */
+        display: none;
         padding-top: 0.8em;
         width: fit-content;
     }
