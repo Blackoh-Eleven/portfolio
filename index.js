@@ -37,8 +37,7 @@ let count = 0;
            document.getElementById('changingspace').textContent = gorro
     },600)
 
-    // console.log(gorro)
-    // console.log(count)
+
 }
 }, 2000);
 
