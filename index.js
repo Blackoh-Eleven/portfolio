@@ -1,17 +1,19 @@
     let ulbar = document.getElementById('nav')
+    let allnav = window.getComputedStyle(ulbar)
    let bars =  document.getElementById('bars')
    let cancel = document.getElementById('cancel')
+
+   
 function showmenu(){
-
-    ulbar.style.left = '-20px'
-    cancel.style.display = 'block'
-    bars.style.display = 'none'
-}
-
-function hidemenu(){
-    ulbar.style.left = '2000px'
-    bars.style.display = 'block'
-    cancel.style.display = 'none'
+    if (allnav.display === 'none'){
+        ulbar.style.display = 'block'
+        bars.classList.remove("fa-bars")
+        bars.classList.add("fa-x")
+    }else if(allnav.display ==='block'){
+        ulbar.style.display = 'none'
+        bars.classList.remove("fa-x")
+        bars.classList.add("fa-bars")
+    }
 }
 
 let possibilities = ['HTML','CSS','JavaScript','React']

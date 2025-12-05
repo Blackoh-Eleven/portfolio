@@ -101,23 +101,18 @@ ul :hover{
     }
     ul{
         position: relative;
-        left: 2000px;
-        display: block;
+        display: none;
         padding-top: 0.8em;
         width: fit-content;
+        animation-delay:0.1s;
     }
-    #cancel{
-        display: none;
+    .fa-x{
         color:red;
         font-size: 1em;
         padding-top: 1em;
     }
 }
 
-
-/* section{
-    display: flex;
-} */
 
 hero{
     width: 100%;
