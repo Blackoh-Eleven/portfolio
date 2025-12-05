@@ -6,10 +6,10 @@
    
 function showmenu(){
     if (allnav.display === 'none'){
-        ulbar.style.display = 'block'
+        ulbar.style.display = 'flex'
         bars.classList.remove("fa-bars")
         bars.classList.add("fa-x")
-    }else if(allnav.display ==='block'){
+    }else if(allnav.display ==='flex'){
         ulbar.style.display = 'none'
         bars.classList.remove("fa-x")
         bars.classList.add("fa-bars")
