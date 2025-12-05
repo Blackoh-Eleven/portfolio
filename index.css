@@ -86,8 +86,6 @@ ul :hover{
 
 .fa-solid{
     display: none;
-
-
 }
 
 @media (max-width :500px) {
@@ -113,10 +111,6 @@ ul :hover{
     }
 }
 
-
-/* section{
-    display: flex;
-} */
 
 hero{
     width: 100%;
@@ -240,8 +234,6 @@ aside{
     animation: rightfade 1s forwards;
     animation-delay:3s;
 }
-
-
 
 @keyframes rightfade{
     to{
