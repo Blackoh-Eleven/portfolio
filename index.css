@@ -6,7 +6,7 @@
 body{
     width: 100%;
     background-color: #0a0a0a;
-    background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png);
+    /* background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png); */
     background-size: cover;
     overflow-x: hidden;
 }
@@ -26,6 +26,7 @@ header{
 .logo{
     display: flex;
     height: 5em;
+    /* background:red; */
 }
 
 .img-logo{
@@ -56,7 +57,7 @@ header{
     }
 }
 
-ul{
+/* ul{
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -64,6 +65,27 @@ ul{
     gap: 60px;
     font-size: clamp(1em,2vw,2em);
     width: 40em;
+    color: white;
+    opacity: 0;
+    animation: fadein 1s ease forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+} */
+
+nav{
+    display: flex;
+    /* background:orange; */
+    padding-top: 1em;
+    gap: 15px;
+    width: 22em;
+    margin-right:20em ;
+
+}
+
+nav>a{
+    text-decoration: none;
+    display: flex;
+    font-size: clamp(1em,2vw,2em);
     color: white;
     opacity: 0;
     animation: fadein 1s ease forwards;
@@ -312,6 +334,7 @@ aside{
     }
     .imgdiv{
         width: fit-content;
+        margin-left: 4em;
         /* padding: 3em; */
     }
 }
