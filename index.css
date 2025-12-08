@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     width: 100%;
     background-color: #0a0a0a;
-    background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png);
+    /* background-image:linear-gradient(rgba(4,9,30,0.5)),url(img/harder.png); */
     background-size: cover;
     overflow-x: hidden;
 }
@@ -47,16 +50,21 @@ header{
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:800px) {
+
     .img-logo{
         display: flex;
         justify-content: flex-end;
         left: 0;
         min-width: 60px;
     }
+    nav{
+        position: relative;
+        left: 11em;
+    }
 }
 
-ul{
+/* ul{
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -64,6 +72,26 @@ ul{
     gap: 60px;
     font-size: clamp(1em,2vw,2em);
     width: 40em;
+    color: white;
+    opacity: 0;
+    animation: fadein 1s ease forwards;
+    animation-delay: 2s;
+    cursor: pointer;
+} */
+
+nav{
+    display: flex;
+    align-items:center;
+    gap: 60px;
+    width: 40em;
+    margin-right:18em ;
+
+}
+
+nav>a{
+    text-decoration: none;
+    display: flex;
+    font-size: clamp(1em,2vw,2em);
     color: white;
     opacity: 0;
     animation: fadein 1s ease forwards;
@@ -78,7 +106,7 @@ ul{
     }
 }
 
-ul :hover{
+nav :hover{
     color: rgb(255, 0, 255);
     background:linear-gradient(120deg,rgba(255, 0, 255,0.4),rgba(233, 153, 233,0.2));
     padding: 0.5em;
@@ -99,11 +127,12 @@ ul :hover{
         padding-top: 0.2em;
         cursor: pointer;
     }
-    ul{
-        position: relative;
+    nav{
+        /* position: relative; */
         display: none;
         padding-top: 0.8em;
         width: fit-content;
+        /* background:orange; */
         animation-delay:0.1s;
     }
     .fa-x{
@@ -310,6 +339,7 @@ aside{
     }
     .imgdiv{
         width: fit-content;
+        margin-left: 4em;
         /* padding: 3em; */
     }
 }
