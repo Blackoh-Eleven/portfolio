@@ -60,11 +60,11 @@ header{
     }
     nav{
         position: relative;
-        left: 11em;
+        /* left: 11em; */
     }
 }
 
-/* ul{
+/* nav{
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -82,16 +82,14 @@ header{
 nav{
     display: flex;
     align-items:center;
-    gap: 60px;
+    justify-content: flex-start;
+    font-size: clamp(1em,2vw,2em);
+    gap: clamp(4px,60px,4vw);
     width: 40em;
-    margin-right:18em ;
-
 }
 
 nav>a{
     text-decoration: none;
-    display: flex;
-    font-size: clamp(1em,2vw,2em);
     color: white;
     opacity: 0;
     animation: fadein 1s ease forwards;
@@ -128,12 +126,13 @@ nav :hover{
         cursor: pointer;
     }
     nav{
-        /* position: relative; */
         display: none;
+        color:red;
         padding-top: 0.8em;
-        width: fit-content;
+        /* width: 50%; */
         /* background:orange; */
         animation-delay:0.1s;
+        
     }
     .fa-x{
         color:red;
