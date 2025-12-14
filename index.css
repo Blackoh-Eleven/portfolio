@@ -414,6 +414,9 @@ aside1>ul{
 aside1>.language{
     display: grid;
     gap: 10px;
+    position: relative;
+    bottom: 0.2em;
+    /* background:pink; */
 }
 
 aside1>.levels{
@@ -440,7 +443,7 @@ aside1>.levels>.react>div{
 /* html */
 
 aside1>.levels>.htmls{
-    color:red;
+    /* color:red; */
     background:rgba(255,0,245 ,0.3);;
     border-radius: 10px;
     width: 100%;
@@ -457,7 +460,6 @@ aside1>.levels>.htmls>div{
 /* css */
 
 aside1>.levels>.css{
-    color:red;
     background:rgba(255,0,245 ,0.3);;
     border-radius: 10px;
     width: 100%;
@@ -473,7 +475,6 @@ aside1>.levels>.css>div{
 /* javascript */
 
 aside1>.levels>.javascript{
-    color:red;
     background:rgba(255,0,245 ,0.3);
     border-radius: 10px;
     width: 100%;
@@ -499,7 +500,57 @@ aside1>.levels>.javascript>div{
 .second-box{
     width: 40%;
     height: 12em;
-    background:red;
+    padding-top: 1em;
+    background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius:20px;
+    /* background:red; */
+}
+@media (max-width:600px) {
+    .second-box>.tools{
+        display: grid;
+        gap: 0px;
+    }
+    
+}
+
+
+
+.secondh2{
+    color:white;
+    padding-bottom:1em;
+}
+
+.tools{
+    list-style: none;
+    color:white;
+    padding-top: 1em;
+    display: grid; 
+     grid-template-columns: auto auto auto;
+
+    gap: 10px;
+    justify-content: center;
+    align-items:center;
+    /* background:red; */
+    width: 100%;
+    
+}
+
+
+.tools>li{
+    border:1px solid black;
+    /* width: 100%; */
+    padding: 0.3em;border-radius:10px;
+
+}
+
+
+.tools>li:hover{
+    border:2px solid rgb(170, 111, 111);
+    color: rgb(252, 215, 215);
 }
 
 
@@ -522,7 +573,16 @@ aside1>.levels>.javascript>div{
 
     .second-box{
         width: 100%;
+        
     }
+
+        .second-box>.tools{
+        display: grid;
+        gap: 10px;
+       /* width: clamp(1em,13.5em,32em) ; */
+    }
+
+
 }
 
 
