@@ -595,6 +595,29 @@ aside1>.levels>.javascript>div{
 
 
 
+/* Contact section */
+
+#Contact{
+    color:white;
+    /* text-align: center; */
+    padding: 2em;
+}
+
+#Contact >h2{
+    text-align: center;
+    /* background:orange; */
+    padding: 1em;
+}
+
+#Contact >p{
+    text-align: center;
+    /* background:red; */
+    padding: 1em;
+    font-size: 20px;
+}
+
+
+
 
 
 
