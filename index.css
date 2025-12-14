@@ -519,8 +519,8 @@ aside1>.levels>.javascript>div{
 
     aside1>.language>.jsclass{
     position: relative;
-    bottom:1em;
-    color: red;
+    bottom:0.5em;
+    /* color: red; */
 }
     
 }
