@@ -497,6 +497,8 @@ aside1>.levels>.javascript>div{
 
 
 
+
+
 .second-box{
     width: 40%;
     height: 12em;
@@ -514,6 +516,11 @@ aside1>.levels>.javascript>div{
         display: grid;
         gap: 0px;
     }
+
+    aside1>.language>.jsclass{
+    position: relative;
+    bottom:0.25em;
+}
     
 }
 
