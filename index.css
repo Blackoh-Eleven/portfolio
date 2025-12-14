@@ -623,6 +623,11 @@ aside1>.levels>.javascript>div{
     text-align: center;
 }
 
+.contact-container{
+    background:linear-gradient(360deg,rgba(107,0,107,0.5),rgba(31, 20, 31, 0.8));
+    padding: 1em;
+}
+
 
 .contact-text{
     max-width: 520px;
@@ -659,6 +664,42 @@ aside1>.levels>.javascript>div{
     margin-top: 30px;
     font-size: 1.5em;
     opacity: 0.7;
+}
+
+.footer{
+    padding: 60px 20px 30px;
+    /* background:red; */
+    text-align: center;
+    margin-bottom: 1em;
+    border-top: 1px solid rgba(107, 4, 107, 0.3);
+    color:white;
+}
+
+.footer-text{
+    opacity: 0.7;
+    margin: 10px 0 20px;
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-socials a{
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-socials a:hover{
+    color: rgb(107, 4, 107);
+    text-shadow: 0 0 10px rgba(107, 4, 107, 0.7);
+}
+
+.copyright{
+    font-size: 14px;
+    opacity: 0.5;
 }
 
 
