@@ -224,7 +224,6 @@ aside{
     aside{
         display: grid;
         gap: 8px;
-        /* grid-template-columns: repeat(3,minmax(0,1fr)); */
     }
 
 }
@@ -234,7 +233,6 @@ aside{
 
 .leftbox{
     padding: 25px 20px 25px 30px;
-    /* min-width: 0; */
     max-width: 15em;
     font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: linear-gradient(135deg,rgba(255,0,255,0.3),rgba(255, 184, 255, 0.5));
@@ -266,7 +264,7 @@ aside{
 
 
 .mainimg{
-    padding: 10em 8em;
+    padding: 8.5em 8em;
     border-radius:10px;
      background-image:url(img/neon.jpg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
      background-position: center;
