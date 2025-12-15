@@ -162,6 +162,31 @@ hero{
         font-size: clamp(9px,0.5vw,0.2);
         height: fit-content;
     }
+
+    div.leftbox{
+        text-align: center;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    div.leftbox>p{
+        max-width: 8em;
+    }
+        div.rightbox{
+        text-align: center;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    div.rightbox>p{
+        max-width: 8em;
+    }
+
+
 }
 
 .nameclass{
@@ -181,24 +206,37 @@ hero{
 aside{
     /* background:orange; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
-    height: 21.5em;
-    padding-left: 7em;
-    padding-right: 7em;
+    padding: 35px 25px;
+    gap: 6em;
+}
+
+@media (max-width:1000px) {
+    aside{
+        display: flex;
+        gap: 8px;
+    }
 
 }
 
+@media (max-width:750px) {
+    aside{
+        display: grid;
+        gap: 8px;
+        /* grid-template-columns: repeat(3,minmax(0,1fr)); */
+    }
+
+}
+
+
+
+
 .leftbox{
-    width:clamp(3em,15em,15em);
-    height: fit-content;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    padding: 25px 20px 25px 30px;
+    /* min-width: 0; */
+    max-width: 15em;
     font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: lighter;
-    font-size: 15px;
     background: linear-gradient(135deg,rgba(255,0,255,0.3),rgba(255, 184, 255, 0.5));
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -207,33 +245,28 @@ aside{
     border-radius:10px;
     transform: rotate(10deg);
     opacity: 0;
-    animation:leftfading 1s ease forwards;
-    animation-delay:2.5s;
+    animation: leftfading 1s ease forwards;
+    animation-delay:3s;
 }
+
+.leftbox>p{
+    max-width: 16em;
+
+}
+
+
 
 @keyframes leftfading{
     to{
         opacity: 1;
-        transform:rotate(10deg) translateX(1em);
+         transform:rotate(10deg) translateX(1em);
     }
 }
 
 
-.imgdiv{
-    /* background:green; */
-    margin-top: 1em;
-    width: 20%;
-    height: 20em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:0;
 
-}
-
-.imgdiv>.mainimg{
-    height: 15em;
-    width: 15em;
+.mainimg{
+    padding: 10em 8em;
     border-radius:10px;
      background-image:url(img/neon.jpg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
      background-position: center;
@@ -241,19 +274,13 @@ aside{
      background-blend-mode: overlay;
      border:0;
      outline: none;
+     min-width: 0;
      filter: drop-shadow(0 0 20px rgba(107, 4, 107, 0.9));
 }
 
 .rightbox{
-    width:clamp(3em,15em,15em);
-    height: fit-content;
-    padding: 1em;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    padding: 25px 13px 25px 13px;
     font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: lighter;
-    font-size: clamp(2px,16px,16px);
     background: linear-gradient(135deg,rgba(255,0,255,0.3),rgba(255, 184, 255, 0.5));
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -266,6 +293,10 @@ aside{
     animation-delay:3s;
 }
 
+.rightbox>p{
+    max-width: 16em;
+}
+
 @keyframes rightfade{
     to{
         opacity: 1;
@@ -274,73 +305,32 @@ aside{
 }
 
 
-@media (max-width:970px) {
-    aside{
-        padding-left: 0;
-        padding-right: 0;
+
+@media (max-width:1000px) {
+        div.leftbox{
+        transform: rotate(0deg);
     }
-
-    .rightbox{
-        z-index: 0;
-    }
-
-    .imgdiv{
-        width: fit-content;
-        z-index: 4;
-    }
-
-}
-
-@media (max-width:600px) {
-
-    @keyframes rightfade{
-    to{
-        opacity: 1;
-        transform:rotate(0deg) translateX(-1em);
-    }
-}
 
     @keyframes leftfading{
     to{
+        transform: rotateX(10deg),translateX(1em);
         opacity: 1;
-        transform:rotate(0deg) translateX(-1em);
     }
 }
-
+         div.rightbox{
+        transform: rotateX(0deg);
+    }
+    
     @keyframes rightfade{
     to{
         opacity: 1;
-        transform:rotate(0deg) translateX(-1em);
+        transform: rotateX(0deg) ;
     }
 }
+}
 
-    aside{
-        
-        display: grid;
-        height: fit-content;
-        padding-left: 1em;
-        align-items:center;
-        justify-content: center
-    }
+@media (max-width:750px) {
 
-    .rightbox{
-        /* font-size: clamp(4px,1vw,0.2em); */
-        transform: rotate(0deg);
-        
-        /* height: fit-content; */
-        width: fit-content;
-    }
-
-    .leftbox{
-        width: fit-content;
-        transform:rotate(0deg);
-        /* height: fit-content; */
-    }
-    .imgdiv{
-        width: fit-content;
-        margin-left: 4em;
-        /* padding: 3em; */
-    }
 }
 
 
@@ -620,6 +610,7 @@ aside1>.levels>.javascript>div{
 .contact{
     padding: 100px 20px;
     /* background:red; */
+    /* background:linear-gradient(135deg,rgba(107,10,107,0.8),rgba(108,0,107,0.5)); */
     text-align: center;
 }
 
