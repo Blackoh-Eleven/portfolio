@@ -428,6 +428,14 @@ aside1>.levels>.react>div{
     height: 1em;
 }
 
+.fa-react{
+    color:#61dafb;
+}
+
+
+
+
+
 /* html */
 
 aside1>.levels>.htmls{
@@ -442,6 +450,10 @@ aside1>.levels>.htmls>div{
     width: 80%;
     height: 1em;
 
+}
+
+.fa-html5{
+    color:#e34f26;
 }
 
 
@@ -460,6 +472,9 @@ aside1>.levels>.css>div{
 
 }
 
+.fa-css3-alt{
+    color:#1572b6;
+}
 /* javascript */
 
 aside1>.levels>.javascript{
@@ -473,6 +488,10 @@ aside1>.levels>.javascript>div{
     width: 50%;
     height: 1em;
 
+}
+
+.fa-js{
+    color:#f7df1e;
 }
 
 
