@@ -37,11 +37,12 @@ body{
     object-fit: cover;
     border-radius:12px;
     flex: 0 0 100%;
-     scroll-snap-align: center;
-
+    scroll-snap-align: center;
+    text-decoration: none;
     flex-shrink: 0;
 
-    background: #fa74ff;
+    /* background: #fa74ff; */
+    background:linear-gradient(360deg,#fa74ff, rgba(107,0,107,0.9));
     border-radius: 20px;
     box-shadow: 
     8px 8px 16px #62596b,
@@ -57,10 +58,18 @@ body{
     transform: scale(1.6);
 }
 
-.card h3,p{
+
+a h2,p{
     color:black;
+    padding-top: 5em;
     text-align: center;
-    position: relative;
-    top: 30%;
+    
 }
+
+a p{
+    position: relative;
+    bottom: 4em;
+}
+
+
 
