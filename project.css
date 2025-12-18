@@ -1,0 +1,66 @@
+
+body{
+    background:black;
+    display:grid ;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; 
+}
+
+.firsth1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 40px;
+    max-width: 100%;
+    outline: 1px solid rgb(95, 40, 100);
+}
+
+@media (max-width:550px) {
+    .container{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+.card{
+    width: 150px;
+    height: 350px;
+    object-fit: cover;
+    border-radius:12px;
+    flex: 0 0 100%;
+     scroll-snap-align: center;
+
+    flex-shrink: 0;
+
+    background: #fa74ff;
+    border-radius: 20px;
+    box-shadow: 
+    8px 8px 16px #62596b,
+    -8px -8px 16px #2a1a3188;
+
+
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.conatainer .card.active{
+    transform: scale(1.6);
+}
+
+.card h3,p{
+    color:black;
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
