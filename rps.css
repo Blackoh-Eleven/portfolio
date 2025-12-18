@@ -49,12 +49,26 @@ aside{
     margin-top: 1em;
 }
 
+.all-options{
+    background: purple;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .score-container{
     outline: 1px solid yellow;
     height: 10vh;
     width: 37%;
     margin-top: 1em;
     height: 70vh;
+}
+
+.score-container h3{
+    color: white;
+    padding: 1em;
 }
 
 
