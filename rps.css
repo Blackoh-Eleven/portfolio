@@ -2,7 +2,7 @@
 body{
     background: black;
     padding-top: 1em;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
@@ -50,7 +50,7 @@ aside{
 }
 
 .all-options{
-    background: purple;
+    /* background: purple; */
     height: 50vh;
     display: flex;
     justify-content: center;

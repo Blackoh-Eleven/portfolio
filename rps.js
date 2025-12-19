@@ -1,55 +1,29 @@
 let computermove = ''
 let result = ''
+let judge = ''
 
 
-    // let randomnum = Math.random()
-    // console.log(randomnum)
-
-    // if(randomnum >= 0 && randomnum <1/3){
-    //     computermove = 'Rock'
-    //     console.log(computermove)
-    // } else if (randomnum >=1/3 && randomnum <2/3){
-    //     computermove = 'Paper'
-    // }else if (randomnum >=2/3 && randomnum <=3/3){
-    //     computermove = 'Scissors'
-    // }
-
-    // console.log(computermove)
-
-
-
-
-// document.getElementById('rock').addEventListener('click',function(){
-//     if(computermove === 'Rock'){
-//         result = 'you tie'
-        
-//     }else if (computermove === 'Paper'){
-//         result = 'You Lose'
-
-//     }else if (computermove === 'Scissors'){
-//         result = 'You Win'
-//     }
-
-//     console.log(`you picked rock ,computer picked ${computermove} you ${result}`)
-//     document.getElementById('pick').textContent = `you picked rock ,computer picked ${computermove} you ${result}`
-// })
-
-function add (){
-
+    function generate(){
         let randomnum = Math.random()
     console.log(randomnum)
 
     if(randomnum >= 0 && randomnum <1/3){
         computermove = 'Rock'
-        console.log(computermove)
     } else if (randomnum >=1/3 && randomnum <2/3){
         computermove = 'Paper'
     }else if (randomnum >=2/3 && randomnum <=3/3){
         computermove = 'Scissors'
     }
+}
 
 
-       if(computermove === 'Rock'){
+
+
+document.getElementById('rock').addEventListener('click',function(){
+
+    generate()
+
+           if(computermove === 'Rock'){
         result = 'you tie'
         
     }else if (computermove === 'Paper'){
@@ -59,7 +33,48 @@ function add (){
         result = 'You Win'
     }
 
-    console.log(`you picked rock ,computer picked ${computermove} you ${result}`)
-    document.getElementById('pick').textContent = `you picked rock ,computer picked ${computermove} you ${result}`
+     judge = `you picked rock ,computer picked ${computermove} you ${result}`
+    document.getElementById('pick').textContent = judge
+    
+})
 
-}
+
+
+document.getElementById('paper').addEventListener('click',function(){
+    generate()
+
+
+           if(computermove === 'Rock'){
+        result = 'you Win'
+        
+    }else if (computermove === 'Paper'){
+        result = 'You Tie'
+
+    }else if (computermove === 'Scissors'){
+        result = 'You Lose'
+    }
+
+
+    judge = `you picked Paper ,computer picked ${computermove} you ${result}`
+    document.getElementById('pick').textContent = judge
+})
+
+document.getElementById('scissors').addEventListener('click',function(){
+    generate()
+
+
+           if(computermove === 'Rock'){
+        result = 'you Lose'
+        
+    }else if (computermove === 'Paper'){
+        result = 'You Win'
+
+    }else if (computermove === 'Scissors'){
+        result = 'You Tie'
+    }
+
+         judge = `you picked Scissors ,computer picked ${computermove} you ${result}`
+    document.getElementById('pick').textContent = judge
+})
+
+
