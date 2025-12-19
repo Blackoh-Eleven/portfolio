@@ -8,14 +8,15 @@ body{
 
 .container{
     /* outline: 1px solid gold; */
-    outline: 1px solid rgba(144, 0, 107, 0.7);
+    /* outline: 1px solid rgba(144, 0, 107, 0.7); */
     height: 90vh;
 }
 
 
 
 header{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+    border-bottom: 1px solid rgba(107, 0, 107, 0.6);
     height: 3em;
     padding: 2em;
     display: flex;
@@ -28,7 +29,7 @@ h1{
 }
 
 .all-container{
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
     display: flex;
     gap: 20px;
 }
@@ -43,7 +44,7 @@ h1{
 }
 
 aside{
-    outline: 1px solid blue;
+    outline: 1px solid rgba(107, 0, 107, 0.6);
     width: 60%;
     height: 69.5vh;
     margin-top: 1em;
@@ -51,24 +52,27 @@ aside{
 
 .all-options{
     /* background: purple; */
-    height: 50vh;
+    height: 30vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
+    cursor: pointer;
 }
 
 .score-container{
-    outline: 1px solid yellow;
+    outline: 1px solid rgb(82, 5, 112);
     height: 10vh;
     width: 37%;
     margin-top: 1em;
     height: 70vh;
+    padding:1em;
 }
 
-.score-container h3{
+aside h3{
     color: white;
     padding: 1em;
+    text-align: center;
 }
 
 

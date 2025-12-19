@@ -1,6 +1,7 @@
 let computermove = ''
 let result = ''
 let judge = ''
+let score = 0
 
 
     function generate(){
@@ -33,6 +34,12 @@ document.getElementById('rock').addEventListener('click',function(){
         result = 'You Win'
     }
 
+    // for scores
+    if(result === 'You Win'){
+        score++
+        document.getElementById('scores').textContent = `Score: ${score}`
+    }
+    // for display
      judge = `you picked rock ,computer picked ${computermove} you ${result}`
     document.getElementById('pick').textContent = judge
     
@@ -45,7 +52,7 @@ document.getElementById('paper').addEventListener('click',function(){
 
 
            if(computermove === 'Rock'){
-        result = 'you Win'
+        result = 'You Win'
         
     }else if (computermove === 'Paper'){
         result = 'You Tie'
@@ -54,7 +61,13 @@ document.getElementById('paper').addEventListener('click',function(){
         result = 'You Lose'
     }
 
+    // for the score
+        if(result === 'You Win'){
+        score++
+        document.getElementById('scores').textContent = `Score: ${score}`
+    }
 
+    // for display
     judge = `you picked Paper ,computer picked ${computermove} you ${result}`
     document.getElementById('pick').textContent = judge
 })
@@ -73,6 +86,13 @@ document.getElementById('scissors').addEventListener('click',function(){
         result = 'You Tie'
     }
 
+    // for score
+            if(result === 'You Win'){
+        score++
+        document.getElementById('scores').textContent = `Score: ${score}`
+    }
+
+    // for display
          judge = `you picked Scissors ,computer picked ${computermove} you ${result}`
     document.getElementById('pick').textContent = judge
 })
