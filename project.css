@@ -5,6 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 90vh; 
+    
 }
 
 .firsth1{
@@ -20,8 +21,22 @@ body{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     padding: 40px;
-    max-width: 100%;
+    max-width: 50%;
+    margin-left: 10em;
     outline: 1px solid rgb(95, 40, 100);
+}
+
+.container::-webkit-scrollbar{
+    height: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: rgba(180, 0, 255, 0.4);
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 @media (max-width:550px) {
@@ -32,7 +47,7 @@ body{
 }
 
 .card{
-    width: 150px;
+    max-width: 300px;
     height: 350px;
     object-fit: cover;
     border-radius:12px;
@@ -40,6 +55,7 @@ body{
     scroll-snap-align: center;
     text-decoration: none;
     flex-shrink: 0;
+    /* scroll-snap-align: start; */
 
     /* background: #fa74ff; */
     background:linear-gradient(360deg,#fa74ff, rgba(107,0,107,0.9));
@@ -59,7 +75,7 @@ body{
 }
 
 
-a h2,p{
+a h2,p {
     color:black;
     padding-top: 5em;
     text-align: center;
@@ -69,6 +85,14 @@ a h2,p{
 a p{
     position: relative;
     bottom: 4em;
+}
+
+.lastp{
+    color:black;
+    position: relative;
+    bottom:3em;
+    text-align: center;
+    font-size: 15px;
 }
 
 
