@@ -3,6 +3,7 @@ const apiUrl =   "https://api.openweathermap.org/data/2.5/weather?units=metric&q
 const apiKey ="7b9f9cfce5163e9e57934fc87e788b1b"
 // // let cityname = 'lagos'    
 // const citys = `q=${'lagos'}` 
+// const apikey = Process.env.apikey
 
 let searchBox = document.querySelector('.search input')
 const searchButton = document.querySelector('.search button')
