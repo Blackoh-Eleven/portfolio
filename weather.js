@@ -86,7 +86,7 @@ let errorMessage = document.querySelector('.error');
 
 async function checkWeather(city) {
   try {
-    const response = await fetch("/api/test", {
+    const response = await fetch("/api/test" ,{
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ city })
