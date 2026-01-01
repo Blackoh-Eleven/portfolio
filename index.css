@@ -337,7 +337,31 @@ aside{
 }
 }
 
-@media (max-width:750px) {
+@media (max-width:500px) {
+.leftbox{
+    max-width: 25em;
+}
+
+.leftbox>p{
+    text-align: center;
+    max-width: 20em;
+}
+
+aside{
+    display: grid;
+    gap: 20px;
+    padding-left: -20px;
+}
+
+.mainimg{
+    width: 30px;
+    margin-left: 3em;
+}
+
+.rightbox{
+    text-align: center;
+    padding-left: 3em;
+}
 
 }
 
@@ -345,20 +369,27 @@ aside{
 
 
 /* skills section */
+
+.skills{
+    padding: 100px 20px;
+    box-sizing:border-box;
+    /* background:red; */
+}
 .skills-container{
-    display: grid;
-    justify-content: center;
-    align-items: center;
     /* background:pink; */
     text-align: center;
+    max-width: 520px;
+    margin: 0 auto 40px;
+    color: white;
+    padding: 1em;
+    opacity: 0.85;
 }
 
 .skills-h1{
     color: white;
-    display: grid;
-    align-self: center;
     /* background:green; */
     padding: 1em;
+    text-align: center;
 }
 .subtext{
     /* background:orange; */
@@ -367,14 +398,27 @@ aside{
     color:white;
 }
 
+
+
+
+
+
+
 .boxes-container{
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 2vw;
+    justify-content: space-between;
+    gap: 1px;
+    /* background:white; */
+    box-sizing: border-box;
 }
 
-.first-box{
-    width: 40%;
-    height: 12em;
+
+div.first-box{
+    flex: 0 0 45%;
+    /* flex:0 0 300px; */
+    box-sizing:border-box;
     padding-top: 1em;
     background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
     backdrop-filter:blur(20px);
@@ -386,42 +430,38 @@ aside{
 
 h2{
     color:white;
+    font-size: clamp(1.4rem,4vw,2.5rem);
 }
 
-.first-box>ul{
-    padding: 1.2em;
-    list-style: none;
-    /* border:1px solid white; */
-    height: 6em;
-    display: grid;
 
-}
 
 aside1{
     display: flex;
-    justify-content: space-around;
-    padding-top: 2em ;
+    justify-content: space-evenly;
+    /* background:red; */
+    padding: 30px 10px;
+    
 }
 aside1>ul{
     list-style: none;
     color:white;
     font-size: 1.2em;
+    /* color:green; */
+    display: grid;
+    gap: 8px;
+}
+li{
+    display: flex;
+    gap: 8px;
 }
 
 /* full boxleft */
-aside1>.language{
-    display: grid;
-    gap: 10px;
-    position: relative;
-    bottom: 0.2em;
-    /* background:pink; */
-}
 
 aside1>.levels{
     width: 60%;
     display: grid;
-    height: 1em;
-    gap: 10px;
+    height: 0.7em;
+    gap: 15px;
     /* background:orange; */
 }
 
@@ -435,7 +475,7 @@ aside1>.levels>.react>div{
     /* background:rgb(92, 187, 92); */
     background:#000000;
     width: 70%;
-    height: 1em;
+    height: 0.8em;
 }
 
 .fa-react{
@@ -458,7 +498,7 @@ aside1>.levels>.htmls{
 aside1>.levels>.htmls>div{
     background: black;
     width: 80%;
-    height: 1em;
+    height: 0.8em;
 
 }
 
@@ -478,7 +518,7 @@ aside1>.levels>.css{
 aside1>.levels>.css>div{
     background: black;
     width: 50%;
-    height: 1em;
+    height: 0.8em;
 
 }
 
@@ -496,7 +536,7 @@ aside1>.levels>.javascript{
 aside1>.levels>.javascript>div{
     background: black;
     width: 50%;
-    height: 1em;
+    height: 0.8em;
 
 }
 
@@ -505,33 +545,20 @@ aside1>.levels>.javascript>div{
 }
 
 
-
-
-.second-box{
-    width: 40%;
-    height: 12em;
+div.second-box{
+    /* padding: 30px 100px; */
+    flex: 0 0 45%;
+    /* flex:0 0 300px; */
+    box-sizing:border-box;
     padding-top: 1em;
     background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
-    border-radius:20px;
-    /* background:red; */
+    border-radius:20px
 }
-@media (max-width:600px) {
-    .second-box>.tools{
-        display: grid;
-        gap: 0px;
-    }
 
-    aside1>.language>.jsclass{
-    position: relative;
-    bottom:0.5em;
-    /* color: red; */
-}
-    
-}
 
 
 
@@ -543,24 +570,21 @@ aside1>.levels>.javascript>div{
 .tools{
     list-style: none;
     color:white;
-    padding-top: 1em;
+    padding: 20px;
     display: grid; 
      grid-template-columns: auto auto auto;
-
-    gap: 10px;
-    justify-content: center;
-    align-items:center;
+     gap: 10px;
+    align-items:center; 
     /* background:red; */
-    width: 100%;
+    /* width: 100%; */
+
     
 }
 
 
 .tools>li{
     border:1px solid black;
-    /* width: 100%; */
     padding: 0.3em;border-radius:10px;
-
 }
 
 
@@ -571,35 +595,25 @@ aside1>.levels>.javascript>div{
 
 
 
-@media (max-width:500px) {
-
-
+@media (max-width:600px) {
     .boxes-container{
-        width: 90%;
-        display: inline-block;
-        margin-left: 1.2em;
-        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 
-    }  
+    .tools{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     
-    .first-box{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .second-box{
-        width: 100%;
-        
-    }
-
-        .second-box>.tools{
-        display: grid;
-        gap: 10px;
-       /* width: clamp(1em,13.5em,32em) ; */
-    }
-
 
 }
+
+
+/* project */
 
 .project{
     padding: 100px 30px;
@@ -608,7 +622,8 @@ aside1>.levels>.javascript>div{
 }
 
 .project-container{
-    /* padding: 1em; */
+    /* padding: 2em; */
+    padding-top: 2em;
     /* background:red; */
     background:linear-gradient(360deg,rgba(148, 94, 148, 0.8),rgba(107,0,107,0.5));
 }

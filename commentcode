@@ -59,3 +59,274 @@
     
 //     checkWeather(userInput)
 // })
+
+
+
+
+
+.skills-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* background:pink; */
+    text-align: center;
+}
+
+.skills-h1{
+    color: white;
+    display: grid;
+    align-self: center;
+    /* background:green; */
+    padding: 1em;
+}
+.subtext{
+    /* background:orange; */
+    padding-bottom: 2em;
+    font-size: 1.5em;
+    color:white;
+}
+
+.boxes-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* .first-box{
+    width: 40%;
+    height: 12em;
+    padding-top: 1em;
+    background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius:20px
+} */
+
+.first-box{
+    padding: 30px 130px;
+    padding-top: 1em;
+    background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius:20px
+}
+
+h2{
+    color:white;
+}
+
+.first-box>ul{
+    padding: 1.2em;
+    list-style: none;
+    /* border:1px solid white; */
+    height: 6em;
+    display: grid;
+
+}
+
+aside1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em ;
+}
+aside1>ul{
+    list-style: none;
+    color:white;
+    font-size: 1.2em;
+}
+
+/* full boxleft */
+aside1>.language{
+    display: grid;
+    gap: 10px;
+    position: relative;
+    bottom: 0.2em;
+    /* background:pink; */
+}
+
+aside1>.levels{
+    width: 60%;
+    display: grid;
+    height: 1em;
+    gap: 10px;
+    /* background:orange; */
+}
+
+aside1>.levels>.react{
+    color:red;
+    background:rgba(255,0,245 ,0.3);
+    border-radius: 10px;
+    width: 100%;
+}
+aside1>.levels>.react>div{
+    /* background:rgb(92, 187, 92); */
+    background:#000000;
+    width: 70%;
+    height: 1em;
+}
+
+.fa-react{
+    color:#61dafb;
+}
+
+
+
+
+
+/* html */
+
+aside1>.levels>.htmls{
+    /* color:red; */
+    background:rgba(255,0,245 ,0.3);;
+    border-radius: 10px;
+    width: 100%;
+}
+
+aside1>.levels>.htmls>div{
+    background: black;
+    width: 80%;
+    height: 1em;
+
+}
+
+.fa-html5{
+    color:#e34f26;
+}
+
+
+/* css */
+
+aside1>.levels>.css{
+    background:rgba(255,0,245 ,0.3);;
+    border-radius: 10px;
+    width: 100%;
+}
+
+aside1>.levels>.css>div{
+    background: black;
+    width: 50%;
+    height: 1em;
+
+}
+
+.fa-css3-alt{
+    color:#1572b6;
+}
+/* javascript */
+
+aside1>.levels>.javascript{
+    background:rgba(255,0,245 ,0.3);
+    border-radius: 10px;
+    width: 100%;
+}
+
+aside1>.levels>.javascript>div{
+    background: black;
+    width: 50%;
+    height: 1em;
+
+}
+
+.fa-js{
+    color:#f7df1e;
+}
+
+
+
+
+.second-box{
+    width: 40%;
+    height: 12em;
+    padding-top: 1em;
+    background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3));
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius:20px;
+    /* background:red; */
+}
+@media (max-width:600px) {
+    .second-box>.tools{
+        display: grid;
+        gap: 0px;
+    }
+
+    aside1>.language>.jsclass{
+    position: relative;
+    bottom:0.5em;
+    /* color: red; */
+}
+    
+}
+
+
+
+.secondh2{
+    color:white;
+    padding-bottom:1em;
+}
+
+.tools{
+    list-style: none;
+    color:white;
+    padding-top: 1em;
+    display: grid; 
+     grid-template-columns: auto auto auto;
+
+    gap: 10px;
+    justify-content: center;
+    align-items:center;
+    /* background:red; */
+    width: 100%;
+    
+}
+
+
+.tools>li{
+    border:1px solid black;
+    /* width: 100%; */
+    padding: 0.3em;border-radius:10px;
+
+}
+
+
+.tools>li:hover{
+    border:2px solid rgb(170, 111, 111);
+    color: rgb(252, 215, 215);
+}
+
+
+
+@media (max-width:500px) {
+
+
+    .boxes-container{
+        width: 90%;
+        display: inline-block;
+        margin-left: 1.2em;
+        gap: 10px;
+
+    }  
+    
+    .first-box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .second-box{
+        width: 100%;
+        
+    }
+
+        .second-box>.tools{
+        display: grid;
+        gap: 10px;
+       /* width: clamp(1em,13.5em,32em) ; */
+    }
+
+
+}
