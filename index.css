@@ -85,7 +85,7 @@ nav{
     display: flex;
     align-items:center;
     /* justify-content: flex-start; */
-    background:red;
+    /* background:red; */
     padding-left:22vw;
     font-size: clamp(1em,1.8vw,2em);
     gap: clamp(4px,60px,4vw);
@@ -125,7 +125,7 @@ nav :hover{
     .fa-solid{
         display: block;
         font-size: 2.5em;
-        color:rgba(177, 13, 202,0.8);
+        color:rgb(155, 89, 255);
         padding-top: 0.2em;
         cursor: pointer;
     }
@@ -449,7 +449,7 @@ div.first-box{
     transition:1.5s ease;
 }
 
-div.first-box:hover{
+div.first-box:active{
     border:1px solid rgba(146,20,80,0.7);
 }
 
