@@ -27,6 +27,10 @@ header{
 
 }
 
+header .logo-space  {
+    /* background:orange; */
+}
+
 
 .logo{
     display: flex;
@@ -56,7 +60,7 @@ header{
 
     .img-logo{
         display: flex;
-        justify-content: flex-end;
+        /* justify-content: flex-end; */
         left: 0;
         min-width: 60px;
     }
@@ -121,6 +125,20 @@ nav :hover{
 
 @media (max-width :500px) {
 
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        /* background:purple; */
+    }
+
+
+
+
+    header .logo-space  {
+    /* background:orange; */
+    width: 20%;
+    }
+
 
     .fa-solid{
         display: block;
@@ -132,21 +150,26 @@ nav :hover{
     nav{
         display: none;
         /* color:red; */
-        padding-top: 0.8em;
-        /* padding-right: -2em; */
-        /* width: 50%; */
-        /* background:orange; */
+        /* background:green; */
+        /* padding-top: 0.8em; */
+        /* padding-left: 1vw; */
+        /* gap: 18px; */
+        gap: clamp(4px, 3.6vw, 24px);
+        padding: 0px 38px;
+        width: 50%;
         animation-delay:0.1s;
-        
+    }
+    nav>a{
+        display: flex;
+        gap: 0px;
+        /* color:red; */
     }
     .fa-x{
         color:red;
         font-size: 1.5em;
         padding-top: 0.5em;
-
-        /* position: relative;
-        right: 1em;
-        top: 0.5em; */
+        width: 5%;
+        z-index: 3;
     }
 }
 
@@ -446,7 +469,7 @@ div.first-box{
     box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
     border-radius:20px;
-    transition:1.5s ease;
+    transition:0.5s ease;
 }
 
 div.first-box:active{
