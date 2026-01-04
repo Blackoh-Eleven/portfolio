@@ -44,3 +44,13 @@ let count = 0;
 }, 2000);
 
 
+
+
+  document.querySelectorAll('.first-box').forEach(box => {
+    box.addEventListener('touchstart', () => {
+      document.querySelectorAll('.first-box')
+        .forEach(b => b.classList.remove('active'));
+      box.classList.add('active');
+    });
+  });
+
