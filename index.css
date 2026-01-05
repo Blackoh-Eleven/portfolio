@@ -473,14 +473,10 @@ div.first-box{
 }
 
 
-.first-box:active,
-.first-box:focus-visible{
+.box.active{
     border: 1px solid rgba(146,20,80,0.7);
 }
 
-.first-box.active{
-    border: 1px solid rgba(146,20,80,0.7);
-}
 
 
 
@@ -623,9 +619,9 @@ div.second-box{
     text-align: center;
     border-radius:20px
 }
-div.second-box:hover{
+/* div.second-box:hover{
     border:1px solid rgba(146,20,80,0.7);
-}
+} */
 
 
 

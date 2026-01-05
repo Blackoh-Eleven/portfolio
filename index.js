@@ -46,11 +46,23 @@ let count = 0;
 
 
 
-  document.querySelectorAll('.first-box').forEach(box => {
-    box.addEventListener('touchstart', () => {
-      document.querySelectorAll('.first-box')
-        .forEach(b => b.classList.remove('active'));
-      box.classList.add('active');
-    });
+  // document.querySelectorAll('.first-box').forEach(box => {
+  //   box.addEventListener('touchstart', () => {
+  //     document.querySelectorAll('.first-box')
+  //       .forEach(b => b.classList.remove('active'));
+  //     box.classList.add('active');
+  //   });
+  // });
+
+
+      const boxes = document.querySelectorAll('.box');
+
+boxes.forEach(box => {
+  box.addEventListener('touchstart', () => {
+    // Remove 'active' from all boxes
+    boxes.forEach(b => b.classList.remove('active'));
+    // Add 'active' to the touched box
+    box.classList.add('active');
   });
+});
 
