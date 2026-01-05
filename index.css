@@ -40,13 +40,18 @@ header .logo-space  {
 .img-logo{
     position: relative;
     left: 10em;
-    top: 0.5em;
-    width: 15%;
+    top: 0.16em;
+    width: 50%;
     min-width: 50px;
     border-radius:10px;
     opacity: 0;
     animation: fading 1s ease forwards;
     animation-delay:1s ;
+}
+
+img.img-logo{
+    padding-top: 15px;
+    height: 60px;
 }
 
 @keyframes fading{
@@ -90,7 +95,8 @@ nav{
     align-items:center;
     /* justify-content: flex-start; */
     /* background:red; */
-    padding-left:22vw;
+    /* padding-left:22vw; */
+    padding-left:42vw;
     font-size: clamp(1em,1.8vw,2em);
     gap: clamp(4px,60px,4vw);
     width: 40em;
@@ -144,7 +150,7 @@ nav :hover{
         display: block;
         font-size: 2.5em;
         color:rgb(155, 89, 255);
-        padding-top: 0.2em;
+        padding-top: 0.5em;
         cursor: pointer;
     }
     nav{
@@ -615,7 +621,7 @@ div.second-box{
     /* background:radial-gradient(rgba(26,13,46,0.3),rgba(146,20,80,0.1)); */
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: 10px,4px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 10px 4px 30px rgba(0, 0, 0, 0.8);
     text-align: center;
     border-radius:20px
 }
