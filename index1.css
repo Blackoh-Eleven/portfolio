@@ -1,0 +1,27 @@
+@media (max-width:500px) {
+    @keyframes slidein{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+}
+
+
+
+div.second-box.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-container.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.skills-container.show{
+    opacity: 1;
+    transform:translateY(0)
+}
