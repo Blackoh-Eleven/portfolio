@@ -66,3 +66,23 @@ boxes.forEach(box => {
   });
 });
 
+
+
+        // const projects = document.querySelectorAll('.project-container')
+
+        const projects = document.querySelectorAll('.box , .skills-container')
+
+        const observer = new IntersectionObserver(entries=> {
+            entries.forEach(entry=>{
+                if (entry.isIntersecting){
+                    entry.target.classList.add('show');
+                    observer.observe(entry.target);
+                }
+            })
+        })
+
+        projects.forEach(project=>observer.observe(project));
+
+
+        
+
