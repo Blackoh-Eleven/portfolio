@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Test</title>
+</head>
+<body>
+
+  <button id="testBtn">Call Backend</button>
+  <p id="result">Waiting...</p>
+
+  <script>
+    document.getElementById("testBtn").addEventListener("click", async () => {
+      try {
+        const res = await fetch("/api/test"); // GET request
+        const data = await res.json();
+
+        console.log("Frontend received:", data);
+        // document.getElementById("result").textContent = data.message;
+      } catch (err) {
+        console.error("Error:", err);
+      }
+    });
+  </script>
+
+</body>
+</html>
