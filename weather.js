@@ -4,7 +4,10 @@ let weatherclass = document.querySelector('.weather-icon');
 let weatherInfo = document.querySelector('.weather');
 let errorMessage = document.querySelector('.error');
 
+console.log('hello blackoh')
 async function checkWeather(city) {
+
+  
   try {
     const response = await fetch('/api/weatherback', {
       method: 'POST',
