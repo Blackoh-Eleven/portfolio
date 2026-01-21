@@ -84,7 +84,27 @@ aside h3{
     }
 
     .score-container{
-        width: 100%;
+        width: 90%;
         height: 10vh;
+        /* display: flex; */
+    }
+
+    span.score-container{
+        /* color:pink; */
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .reset-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+        border: none;
+        padding: 0;
+        /* height: 3em; */
+        padding: 10px 40px;
+        font-size: 18px;
+        border-radius: 3px;
     }
 }
