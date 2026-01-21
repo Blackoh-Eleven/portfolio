@@ -97,4 +97,10 @@ document.getElementById('scissors').addEventListener('click',function(){
     document.getElementById('pick').textContent = judge
 })
 
+document.getElementById("reset-btn").addEventListener("click",function(){
+    console.log('e dey work')
+    score = 0
+    console.log(score)
+})
+
 
