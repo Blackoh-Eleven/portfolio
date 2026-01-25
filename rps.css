@@ -94,17 +94,39 @@ aside h3{
         display: flex;
         justify-content: space-between;
     }
+
+    h3#pick{
+        text-align: left;
+        padding: 0;
+        
+    }
+
+
+        h3#pick-computer{
+        text-align: left;
+        padding: 0;
+        
+    }
+
+         h3#result{
+        text-align: left;
+        padding: 0;
+    }
+
+    
     
     .reset-button{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background: red; */
+        background: transparent;
+        color:#fff;
         border: none;
         padding: 0;
-        /* height: 3em; */
+        outline: 1px solid purple;
         padding: 10px 40px;
         font-size: 18px;
         border-radius: 3px;
+        cursor: pointer;
     }
 }

@@ -1,6 +1,8 @@
 let computermove = ''
 let result = ''
-let judge = ''
+let judgeplayer = ''
+let judgecomputer= ''
+let resultdisplay = ''
 let score = 0
 
 
@@ -40,8 +42,15 @@ document.getElementById('rock').addEventListener('click',function(){
         document.getElementById('scores').textContent = `Score: ${score}`
     }
     // for display
-     judge = `you picked rock ,computer picked ${computermove} you ${result}`
-    document.getElementById('pick').textContent = judge
+     judgeplayer = `you picked rock`
+     judgecomputer= `computer picked ${computermove}`
+     resultdisplay = `You ${result}`
+      
+      
+    document.getElementById('pick').textContent = judgeplayer;
+    document.getElementById('pick-computer').textContent = judgecomputer
+
+    document.getElementById('result').textContent =  resultdisplay
     
 })
 
@@ -68,8 +77,15 @@ document.getElementById('paper').addEventListener('click',function(){
     }
 
     // for display
-    judge = `you picked Paper ,computer picked ${computermove} you ${result}`
-    document.getElementById('pick').textContent = judge
+     judgeplayer = `you picked Paper`
+     judgecomputer= `computer picked ${computermove}`
+     resultdisplay = `You ${result}`
+      
+      
+    document.getElementById('pick').textContent = judgeplayer;
+    document.getElementById('pick-computer').textContent = judgecomputer
+
+    document.getElementById('result').textContent =  resultdisplay
 })
 
 document.getElementById('scissors').addEventListener('click',function(){
@@ -82,7 +98,7 @@ document.getElementById('scissors').addEventListener('click',function(){
     }else if (computermove === 'Paper'){
         result = 'You Win'
 
-    }else if (computermove === 'Scissors'){
+    }else if (computermove === 'Scissors'){ 
         result = 'You Tie'
     }
 
@@ -93,13 +109,21 @@ document.getElementById('scissors').addEventListener('click',function(){
     }
 
     // for display
-         judge = `you picked Scissors ,computer picked ${computermove} you ${result}`
-    document.getElementById('pick').textContent = judge
+     judgeplayer = `you picked Scissors`
+     judgecomputer= `computer picked ${computermove}`
+     resultdisplay = `You ${result}`
+      
+      
+    document.getElementById('pick').textContent = judgeplayer;
+    document.getElementById('pick-computer').textContent = judgecomputer
+
+    document.getElementById('result').textContent =  resultdisplay
 })
 
 document.getElementById("reset-btn").addEventListener("click",function(){
     console.log('e dey work')
     score = 0
+    document.getElementById('scores').textContent = `Score: ${score}`
     console.log(score)
 })
 
