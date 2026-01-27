@@ -44,7 +44,7 @@ document.getElementById('rock').addEventListener('click',function(){
     // for display
      judgeplayer = `you picked rock`
      judgecomputer= `computer picked ${computermove}`
-     resultdisplay = `You ${result}`
+     resultdisplay = `${result}`
       
       
     document.getElementById('pick').textContent = judgeplayer;
@@ -79,7 +79,7 @@ document.getElementById('paper').addEventListener('click',function(){
     // for display
      judgeplayer = `you picked Paper`
      judgecomputer= `computer picked ${computermove}`
-     resultdisplay = `You ${result}`
+     resultdisplay = `${result}`
       
       
     document.getElementById('pick').textContent = judgeplayer;
@@ -111,7 +111,7 @@ document.getElementById('scissors').addEventListener('click',function(){
     // for display
      judgeplayer = `you picked Scissors`
      judgecomputer= `computer picked ${computermove}`
-     resultdisplay = `You ${result}`
+     resultdisplay = ` ${result}`
       
       
     document.getElementById('pick').textContent = judgeplayer;
