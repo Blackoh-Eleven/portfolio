@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+
+    height: 100vh;
+    width: fit-content;
+    /* background-color: black; */
+    /* background-image: linear-gradient(rgba(16, 9, 41, 0.5),rgba(4,9,30,0.5)),url(img/security1.JPG); */
+    background:black;
+    overflow-x: hidden;
+}
+
+.border{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* position: fixed; */
+    
+}
+
+.header-logo{
+    width: max-content;
+    display: flex;
+    align-items:center;
+    column-gap: 15px;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+.header-logo>a>img{
+    width: 70px;
+    height: 70px;
+    border-radius: 45%;
+    margin-left: 10px;
+}
+.logo-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-size: 1.8em; */
+    font-size: clamp(1rem,2.5vw,1.8em);
+    font-weight: bolder;
+    color: rgb(0, 255, 238)
+
+    
+    
+}
+
+.nav-links{
+    display: flex;
+    /* gap: 60px; */
+    gap: clamp(60px,1vw,4vw);
+    padding-right: 7vw;
+}
+
+
+
+@media (max-width:766px) {
+    .nav-links{
+       gap: 16px;
+       display: none;
+}
+}
+
+
+.nav-links li{
+    list-style: none;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.nav-links li a{
+    color: rgb(0, 255, 238);
+    text-decoration: none;
+    transition:2s ease ;
+
+}
+.nav-links li a:hover{
+    /* color:red; */
+    text-decoration: underline;
+}
+
+
+
+
+
+
+@media (max-width:685px) {
+
+    .border{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* text-decoration: underline; */
+    border-bottom:1px solid rgba(149, 235, 238, 0.377);
+    
+}
+
+div.header-logo{
+    padding: 0 ;
+    padding-top: 15px;
+}
+
+.nav-links li{
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items:center;
+    outline: 1px solid rgba(248, 236, 169,0.3);
+    padding-top: 10px;
+}
+
+    .fa-bars{
+    color: rgb(0, 255, 238);
+    font-size: 35px;
+}
+
+.fa-x{
+    color:red;
+    display: none;
+    font-size: 35px;
+}
+
+ul
+}
+.big-title{
+    background: rgb(19, 90, 100,0.1);
+    width: 50%;
+    height: 180px;
+    position: relative;
+    left: 2%;
+    top: 1em;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    /* color: rgba(170, 234, 117); */
+    color: rgb(199, 253, 249);
+}
+
+h2{
+    /* display: flex; */
+    border-radius: 20px;
+    background-color: rgba(39, 112, 28, 0.3);
+    color: rgb(93, 178, 172);
+    max-width: 30%;
+    padding: 9px;
+    margin-left: 7px;
+    height: max-content;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+h2>span{
+    /* color: black; */
+    color: rgb(232, 245, 244);
+    font-size: 0.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.password-box-container{
+    margin-top: 20px;
+    position: relative;
+    left: 15px;
+    display: flex;
+    gap: 6px;
+}
+.password-box{
+    border: 3px rgb(8, 131, 121) solid;
+    height: 30px;
+    /* max-width: 15em; */
+    position: relative;
+    width: 20%;
+    border-radius: 7px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 7px;
+}
+
+.copy-button{
+    color: green;
+    border-radius: 7px;
+    /* width: 50px; */
+    border-color: transparent;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 5px;
+    background-color: rgb(199, 241, 241);
+    cursor: pointer;
+}
+.all-button{
+   position: relative;
+   left: 15px;
+   padding-top: 15px;
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   gap: 10px;
+   width: 200px;
+}
+.all-button > button{
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 7px;
+    background-color: transparent;
+    color: rgb(162, 206, 236)
+}
+
+
+.generate-copy{
+    display: flex;
+    height: 150px;
+}
+.copyButton{
+    color: green; 
+    height: 30px;
+    max-width: 15em;
+    position: relative;
+    left: 42em;
+    top: 79px;
+    text-align: right;
+    border-radius: 7px;
+    cursor: pointer;
+    display: block;
+}
+

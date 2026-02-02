@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="passgen.css">
+    <script src="https://kit.fontawesome.com/8eaba6d24e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Password Generator</title>
+
+</head>
+<body>
+  
+    <section class="container">
+        <div class="border">
+            <div class="header-logo">
+                <a href="index.html"><img src="img/sifaka logo.PNG" width="5%" height="5%" style="opacity:0.7 ;"></a>
+                <p class="logo-name">SIFAKA </p>
+            </div>
+            <ul class="nav-links" id="navlinks">
+                <li><a href="">HOME</a></li>
+                <li><a href="" class="password-icon">GENERATE <br> PASSWORD</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-x" id="cross"></i>
+          
+        </div>   
+      
+        <div class="big-title">Keep Your Password Safe & Secure With Our Easy To Use Password Generator</div>  
+        <div class="intro"> 
+      <h2>Want to SECURE all Account?
+        <br>
+        <br>
+       <span>we are always ready to help you with that with ease where we give you the best you need</span>
+      </h2>
+      </div>
+
+    
+      <div class="password-box-container">
+       <div id="passwordOutput" class="password-box"></div>
+       <button class="copy-button" onclick=" copyToClipBoard()">copy</button>
+     </div>
+      
+        <div class="all-button">
+      <button id="generate_all_button" class="first-one">Generate</button>
+      <br>
+      <button id="eliminate-numbers"><span>X</span>Number</button>
+      <br>
+      <button id="eliminate-lowerCase"><span>X</span>UpperCase</button>
+      <br>
+      <button id="eliminate-UpperCase"><span>X</span>LowerCase</button>
+        </div>
+
+   
+    </div>
+    </div>
+
+    
+      </div>
+       
+    </section>
+    <script src="passengen.js"></script>
+</body>
+</html>
