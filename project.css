@@ -60,11 +60,12 @@ body{
     /* scroll-snap-align: start; */
 
     /* background: #fa74ff; */
-    background:linear-gradient(360deg,#fa74ff, rgba(107,0,107,0.9));
+    /* background:linear-gradient(360deg,#fa74ff, rgba(107,0,107,0.9)); */
+    background:linear-gradient(135deg,rgba(26,13,46,0.8),rgba(146,20,80,0.9));
     border-radius: 20px;
     box-shadow: 
-    8px 8px 16px #62596b,
-    -8px -8px 16px #2a1a3188;
+    3px 3px 9px #62596b,
+    -3px -3px 9px #2a1a3188;
 
 
     transform: scale(0.9);
@@ -78,7 +79,8 @@ body{
 
 
 a h2,p {
-    color:black;
+    /* color:black; */
+    color:whitesmoke;
     padding-top: 5em;
     text-align: center;
     
@@ -90,7 +92,7 @@ a p{
 }
 
 .lastp{
-    color:black;
+    color:whitesmoke;
     position: relative;
     bottom:3em;
     text-align: center;
