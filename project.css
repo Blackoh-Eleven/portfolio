@@ -41,15 +41,13 @@ body{
 
 @media (max-width:550px) {
     .container{
-        /* margin-left: 5em; */
         max-width: 100%;
-        /* margin-right: 2em; */
         margin-left:0.3em;
     }
 }
 
 .card{
-    max-width: 300px;
+     max-width: 300px;
     height: 350px;
     object-fit: cover;
     border-radius:12px;
@@ -57,20 +55,17 @@ body{
     scroll-snap-align: center;
     text-decoration: none;
     flex-shrink: 0;
-    /* scroll-snap-align: start; */
-
-    /* background: #fa74ff; */
-    /* background:linear-gradient(360deg,#fa74ff, rgba(107,0,107,0.9)); */
-    background:linear-gradient(135deg,rgba(26,13,46,0.8),rgba(146,20,80,0.9));
-    border-radius: 20px;
-    box-shadow: 
-    3px 3px 9px #62596b,
-    -3px -3px 9px #2a1a3188;
-
-
+    /* scroll-snap-align: start;
+    /* background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3)); */
+     background:radial-gradient(rgba(26,13,46,0.02),rgba(146,20,80,0.01));
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+        box-shadow: 
+    3px 3px 9px #2d2635,
+    -3px -3px 9px #2a1a3188;;
     transform: scale(0.9);
-    transition: transform 0.3s ease;
-    cursor: pointer;
+    transition: transform 0.3s ease; 
+     cursor: pointer;  
 }
 
 .conatainer .card.active{
@@ -79,8 +74,8 @@ body{
 
 
 a h2,p {
-    /* color:black; */
-    color:rgb(238, 172, 210);
+
+    color:rgb(237, 218, 245);
     padding-top: 5em;
     text-align: center;
     
@@ -92,7 +87,7 @@ a p{
 }
 
 .lastp{
-    color:whitesmoke;
+    color:rgb(138, 135, 135);
     position: relative;
     bottom:3em;
     text-align: center;
