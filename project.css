@@ -23,7 +23,7 @@ body{
     padding: 40px;
     max-width: 50%;
     margin-left: 10em;
-    outline: 1px solid rgb(95, 40, 100);
+    outline: 1px solid rgb(70, 58, 71);
 }
 
 .container::-webkit-scrollbar{
@@ -31,7 +31,7 @@ body{
 }
 
 .container::-webkit-scrollbar-thumb {
-    background: rgba(180, 0, 255, 0.4);
+    background: rgba(219, 167, 241, 0.4);
     border-radius: 10px;
 }
 
@@ -55,8 +55,8 @@ body{
     scroll-snap-align: center;
     text-decoration: none;
     flex-shrink: 0;
-    /* scroll-snap-align: start;
-    /* background:radial-gradient(rgba(212, 98, 212,0.2),rgba(255,0,255,0.3)); */
+    scroll-snap-align: start;
+    /* background:radial-gradient(rgba(73, 14, 73, 0.2),rgba(255,0,255,0.3)); */
      background:radial-gradient(rgba(26,13,46,0.02),rgba(146,20,80,0.01));
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter: blur(20px);
