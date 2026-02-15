@@ -22,3 +22,38 @@ function showmenu(){
         bars.classList.add('fa-bars')
     }
 }
+
+
+
+// document.getElementById('.generation').addEventListener("click",function(){
+
+//     console.log('yeaah')
+// })
+
+
+
+
+
+
+
+
+let gene = document.getElementById('generation')
+allgene = window.getComputedStyle(gene)
+
+
+function boro(){
+    // console.log('im working')
+
+    let buttin =  document.getElementById('btn')
+
+    let allbuttin = window.getComputedStyle(buttin)
+
+    console.log(allbuttin.display)
+
+
+if(allbuttin.display === 'none'){
+    // console.log(2)
+    buttin.style.display = 'flex'
+    gene.style.display = 'none'
+}
+}
