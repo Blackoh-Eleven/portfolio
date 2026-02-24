@@ -98,7 +98,7 @@ for (let i = splittedCombined.length - 1; i >= 0; i--) {
 let newChar = splittedCombined.join('')
 
 // console.log(newChar)
-let charsli = newChar.slice(0,7)
+let charsli = newChar.slice(0,10)
 document.getElementById('passwordOutput').value = charsli
 console.log(charsli)
 })
@@ -131,7 +131,7 @@ let eliminateuppercase = document.getElementById('eliminate-lowerCase')
     
     let splittedResultToUpperCase = splittedCombined.join('').toUpperCase()  
     
-    let charactersNeeded = splittedResultToUpperCase.slice(0,7)
+    let charactersNeeded = splittedResultToUpperCase.slice(0,10)
     document.getElementById('passwordOutput').value = charactersNeeded
     console.log(charactersNeeded)
     } )
@@ -158,7 +158,7 @@ let eliminatelowercase = document.getElementById('eliminate-UpperCase').addEvent
     }
 
     let eliminateUpperCase = splittedCombined.join('').toLowerCase()
-    let charactersNeeded = eliminateUpperCase.slice(0,7)
+    let charactersNeeded = eliminateUpperCase.slice(0,10)
     document.getElementById('passwordOutput').value = charactersNeeded
     console.log(charactersNeeded)
     } )
