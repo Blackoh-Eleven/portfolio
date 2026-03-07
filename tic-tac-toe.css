@@ -1,13 +1,92 @@
 body{
-    background:black;
-    color: whitesmoke;
-    display: flex;
+    background: #000;
+    /* display: inline; */
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding-top: 33vh;
 }
 
 h1{
+    color:white;
+    /* background:red; */
     text-align: center;
+    /* width: 250%; */
+    position: relative;
 
+    animation: tictac 2s ease-in-out infinite ;
+}
+
+h1::first-letter{
+    color:rgba(123, 194, 42, 0.9);
+}
+
+@keyframes tictac {
+    0%{top:0px}
+    50%{top:20px;}
+    100%{top: 0px;}
+}
+
+
+.container{
+    background:#fff;
+    height: 20px;
+    /* width: 520px; */
+    width: 90%;
+    border-radius: 7px;
+    /* align-self: center; */
+    display: grid;
+    justify-self: center;
+
+}
+
+.moving{
+    background:rgb(12, 184, 12);
+    height: 20px;
+    border-radius:7px;
+    width: 0%;
+}
+p{
+    color: white;
+    text-align: center;
+}
+
+#span1{
+    color: blue;
+    /* color: black; */
+    font-size: 32px;
+}
+
+#span2{
+    color:red;
+    font-size: 32px;
+}
+
+#span3{
+    /* color: black; */
+    font-size: 32px;
+    color:orange;
+}
+
+
+div{
+    color:rgb(0, 0, 0);
+}
+
+
+.start-btn{
+    width: 80px;
+    padding: 7px;
+    border-radius:5px;
+    font-size: 23px;
+    background:linear-gradient(135deg,rgba(219, 226, 89, 0.9),rgba(0,40,71,0.7));
+    cursor:pointer;
+    border:none;
+    transition: 1.5s ease-in-out ;
+}
+
+.start-btn:hover{
+    background:rgba(69, 212, 129,0.6);
+    /* width: 120%; */
+    color:rgba(245, 245, 245, 0.555);
 }
