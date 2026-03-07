@@ -14,7 +14,7 @@ count = 0
 
 
 
-setInterval(()=>{
+let currentdot = setInterval(()=>{
 
     alldot.forEach((dot)=>{
         dot.style.color = ''
@@ -23,7 +23,7 @@ setInterval(()=>{
 
 
     // console.log(alldot[2].style.color)
-    alldot[loadingcolorindex].style.color = 'green';
+    alldot[loadingcolorindex].style.color = '#2e7d32';
     loadingcolorindex++ 
 
     console.log(loadingcolorindex)
@@ -41,6 +41,7 @@ setInterval(()=>{
    if(count == 101){
     console.log('i don catch am')
     count = clearInterval(timer)
+    clearInterval(currentdot)
     // document.getElementById('loading').textContent = 'Done'
     document.getElementById('loading').innerHTML = `<button class="start-btn" onclick="window.location.href='ticmain.html'" >Start</button>`
    }

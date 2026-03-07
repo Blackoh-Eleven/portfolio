@@ -1,15 +1,30 @@
 body{
     background: #000;
-    /* display: inline; */
     justify-content: center;
     align-items: center;
-    height: 100vh;
     padding-top: 33vh;
+    overflow: none;
+    background-image: url(img/tree3.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+
+}
+@media (max-width:500px) {
+    body{
+        background-size:cover;
+        height: 70vh;
+         /* background-position:bottom; */
+    }
+   
 }
 
 h1{
-    color:white;
-    /* background:red; */
+    color: #0b3d0b;
+    text-shadow:0 3px 8px rgba(0,0,0,0.8);
     text-align: center;
     /* width: 250%; */
     position: relative;
@@ -18,7 +33,8 @@ h1{
 }
 
 h1::first-letter{
-    color:rgba(123, 194, 42, 0.9);
+    /* color:rgba(123, 194, 42, 0.9); */
+    color: #0fe492da;
 }
 
 @keyframes tictac {
@@ -50,23 +66,26 @@ h1::first-letter{
 p{
     color: white;
     text-align: center;
+    font-size: 23px;
 }
 
 #span1{
-    color: blue;
-    /* color: black; */
-    font-size: 32px;
+    color: rgba(255,255,255,0.5);
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 #span2{
-    color:red;
-    font-size: 32px;
+    color: rgba(255,255,255,0.5);
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 #span3{
-    /* color: black; */
-    font-size: 32px;
-    color:orange;
+    color: rgba(255,255,255,0.5);
+    /* color:#2e7d32; */
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 
