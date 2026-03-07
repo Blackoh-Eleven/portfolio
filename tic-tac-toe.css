@@ -36,7 +36,8 @@ h1::first-letter{
     border-radius: 7px;
     /* align-self: center; */
     display: grid;
-    justify-self: center;
+    /* justify-self: center; */
+    margin: 0 auto;
 
 }
 
