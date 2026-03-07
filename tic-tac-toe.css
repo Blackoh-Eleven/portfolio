@@ -34,7 +34,7 @@ h1{
 
 h1::first-letter{
     /* color:rgba(123, 194, 42, 0.9); */
-    color: #0fe492da;
+    color: #eaee07;
 }
 
 @keyframes tictac {
@@ -103,10 +103,14 @@ div{
     cursor:pointer;
     border:none;
     transition: 1.5s ease-in-out ;
+    color:white;
+    font-weight: bolder;
 }
 
 .start-btn:hover{
-    background:rgba(69, 212, 129,0.6);
+    background:#eaee07;
+
     /* width: 120%; */
-    color:rgba(245, 245, 245, 0.555);
+    /* color:rgba(245, 245, 245, 0.555); */
+    color:black;
 }
