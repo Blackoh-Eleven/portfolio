@@ -3,6 +3,3 @@
 *.env
 .vercel
 .env*.local
-.ticmain.css
-.ticmain.html
-.ticmain.js

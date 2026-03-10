@@ -16,6 +16,7 @@
     let mypick = []
     let computerpick = []
     let  result = ''
+    let currentstatus = ''
 
 
 
@@ -44,8 +45,14 @@
             e.target.textContent = "O"
             e.target.style.color = 'greenyellow'
             // console.log(e.target)
+            
             mypick.push(e.target)
-            // console.log(mypick)
+            console.log(mypick)
+
+            // mypick.forEach(eachpick => {
+            //     currentstatus= 'ongreen'
+            //     console.log(currentstatus)
+            // });
 
             // if(mypick.includes(gridTwo,gridFive,gridEight)){
             //     console.log('you get idea')
@@ -136,25 +143,9 @@
 
 
 
+        // for the computer move
 
-
-
-
-
-
-
-
-            //    
-
-
-            // e.target.style.background = 'green'
-            // e.target.style.background = 'transparent'
-            // console.log(picked)
-        }else{console.log('alreadypicked');}
-    
-        }
-
-
+        
         if(mypick.length >4 && result === ''){
             console.log('draw')
              setTimeout(()=>{
@@ -166,7 +157,10 @@
 
         // console.log(!picked.includes(e.target))
 
-    let available = all.filter(item =>!picked.includes(item)) //filter.picked ones out and leaves behind the ones unpicked
+        // if(mypick.includes(e.target)){
+
+             let available = all.filter(item =>!picked.includes(item)) //filter.picked ones out and leaves behind the ones unpicked
+    console.log(available)
 
 
 
@@ -177,6 +171,11 @@
         picked.push(popped)
         computerpick.textContent = 'X'
         computerpick.style.color = 'red'
+
+
+    // if(e.target.textContent !== 'O'){
+
+        // }
 
 
 
@@ -270,6 +269,38 @@
                    btn.style.display = 'block'
                 },1000)
         }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //    
+
+
+            // e.target.style.background = 'green'
+            // e.target.style.background = 'transparent'
+            // console.log(picked)
+        }else{
+          console.log('already picked')
+        }
+    
+        }
+
+
+
+
+
+
+   
 
 
 
@@ -283,22 +314,8 @@
 
 
 
-        // computerpick.style.background = 'red'
-        // console.log(popped)
-        // console.log(available.length)
-        // console.log(picked.length)
-        
-        // if(available.length === 1 && picked.length === 8){     
-        //     console.log('hello')  
-            
-        //     setTimeout(()=>{
-        //             container.innerHTML = `<h1 >GAME OVER</h1>
-        //            <h3>Draw</h3>`
-        //         //    btn.style.display = 'block'
-        //         },1000)}
-                
-        // console.log(computerpick)
-    }
+
+    
 
     // if()
 
@@ -316,7 +333,11 @@
 
 
 
+    // if(mypick.includes(e.target) ){
+    //     console.log(mypick)
 
+    //     computerpick = ''
+    // }else{}
 
 
 
