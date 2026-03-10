@@ -1,13 +1,282 @@
 body{
-    background:black;
+    background-image: url(img/mobile\ background.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
     display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.container{
+    width: 50%;
+    height: 93%;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 1px;
+}
+
+.cell{
+    border: 2px solid rgba(228, 209, 106,0.8);
+    display: flex; 
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    font-size: 30px;
+    font-weight: bold;
+    /* background:transparent; */
+}
+
+
+
+
+/* @media (max-width:700px) { */
+    /* body{ */
+    /* background-color: rgb(231, 125, 125); */
+    /* background:url(img/mobile\ background.png); */
+    /* background-size:cover; */
+    /* background-position:center; */
+    /* background-repeat: no-repeat; */
+    /* height: 100vh; */
+    /* margin: 0; */
+    /* overflow: hidden; */
+/* } */
+
+    /* .board{
+    width: 180%;
+    aspect-ratio: 1/1;
+    /* display: grid; */
+    /* background:red; */
+    /* margin: 0 auto; */
+    /* } */ 
+/* } */
+
+
+@media (max-width:768px),(max-width:500px) {
+    .container{
+    width: 63%;
+    height: 60%;
+
+}
+}
+
+@media (max-width:470px),(max-width:500px) {
+    .container{
+    width: 80%;
+    height: 50%;
+}
+
+
+}
+
+
+.fa-volume-high{
+    /* font-size: 40px; */
+    /* transform: translateX(600px); */
+    color:rgba(252, 150, 33, 0.966);
+
+}
+
+
+.fa-gear{
+
+    /* position: relative; */
+    /* font-size: 40px; */
+    cursor: pointer;
+    /* transform: translate(610px,150px); */
+    color:rgba(252, 227, 6, 0.918);
 
 }
 
 h1{
-    color:white;
+    /* display: inline; */
+    color:#fff;
     text-align: center;
+    /* background:red; */
+    position: relative;
+    top: 40%;
+    
 }
+
+h3{
+    color:whitesmoke;
+    text-align: center;
+    /* background:red; */
+    position: relative;
+    top: 40%;
+}
+
+
+button{
+    display: none;
+    background:linear-gradient(135deg,rgba(233,11,55,0.7),rgba(55,111,22,0.7));
+    height: 40px;
+    /* align-self:flex-end;
+    transform: translateX(-390%); */
+    /* width: 30px; */
+    position: absolute;
+    bottom: 19%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #container{
+    /* height: 300px; */
+    /* width: 28%; */
+    /* background-color:black; */
+    /* display: grid; */
+    /* grid-template-columns: 40px 40px 40px; */
+    /* grid-template-rows: 40px 40px ; */
+    /* gap: 50px; */
+    /* display: none; */
+    /* opacity: 0.5; */
+/* } */ 
+
+/* .ticgrid{
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: white;
+} */

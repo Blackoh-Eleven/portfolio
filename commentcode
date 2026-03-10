@@ -400,3 +400,147 @@ aside1>.levels>.javascript>div{
     
 //     checkWeather(userInput)
 // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tic tac toe 
+
+
+
+/* .container{
+    width: 38%;
+    aspect-ratio: 1/1;
+    background-color:black;
+    padding-top: 40px;
+    opacity: 0.5;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+} */
+
+/* media screen sizes */
+
+/* @media (max-width:769px) {
+
+    .container{
+    width: 50%;
+    aspect-ratio: 1/1;
+    }
+   
+} */
+
+@media (max-width:590px) {
+
+
+    .container{
+    width: 65%;
+    aspect-ratio: 1/1;
+    }
+   
+}
+
+@media (max-width:500px) {
+    body{
+        background-size:cover;
+        height: 100vh;
+         /* background-position:bottom; */
+    }
+
+    .container{
+    width: 70%;
+    aspect-ratio: 1/1;
+    }
+   
+}
+
+@media (max-width:412px) {
+    body{
+        background-size:cover;
+        height: 100vh;
+         /* background-position:bottom; */
+    }
+
+    .container{
+    width: 90%;
+    aspect-ratio: 1/1;
+    }
+   
+}
+
+
+@media (max-width:375px) {
+    body{
+        background-size:cover;
+        height: 100vh;
+         /* background-position:bottom; */
+    }
+
+    .container{
+    width: 92%;
+    aspect-ratio: 1/1;
+    }
+   
+}
+
+
+/* end of media screen sizes */
+
+
+.ticgrid{
+    /* background:red; */
+    width: 90%;
+    aspect-ratio:1/1;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color:darkblue;
+}
+
+
+
+
+
+
