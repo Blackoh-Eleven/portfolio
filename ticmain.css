@@ -61,44 +61,30 @@ body{
 /* } */
 
 
-@media (max-width:768px),(max-width:500px) {
-    .container{
-    width: 63%;
-    height: 60%;
 
-}
-}
-
-@media (max-width:470px),(max-width:500px) {
-    .container{
-    width: 80%;
-    height: 50%;
-}
-
-
-}
 
 
 .fa-volume-high{
-    /* font-size: 40px; */
-    /* transform: translateX(600px); */
+    font-size: 40px;
     color:rgba(252, 150, 33, 0.966);
+    position: absolute;
+    right: 4vw;
+    top: 2vh;  
 
 }
 
 
 .fa-gear{
-
-    /* position: relative; */
-    /* font-size: 40px; */
+    font-size: 40px;
     cursor: pointer;
-    /* transform: translate(610px,150px); */
     color:rgba(252, 227, 6, 0.918);
+    position: absolute;
+    right: 4vw;
+    top: 20%;
 
 }
 
 h1{
-    /* display: inline; */
     color:#fff;
     text-align: center;
     /* background:red; */
@@ -126,6 +112,43 @@ button{
     position: absolute;
     bottom: 19%;
 
+}
+
+
+@media (max-width:768px),(max-width:500px) {
+    .container{
+    width: 63%;
+    height: 60%;
+}
+
+
+
+
+}
+
+@media (max-width:470px),(max-width:500px) {
+    .container{
+    width: 80%;
+    height: 50%;
+}
+
+
+}
+
+
+@media (max-width:500px) {
+    .fa-gear{
+        font-size: 27px;
+        position: absolute;
+        left: 2%;
+        top: 85%;
+    }
+
+    .fa-volume-high{
+        font-size: 27px;
+        position: absolute;
+        top: 10%;
+    }
 }
 
 
