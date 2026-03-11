@@ -118,15 +118,11 @@ button{
     .container{
     width: 60%;
     height: 30%;
-    background-image: url(img/ChatGPT\ Image\ Mar\ 10\,\ 2026\,\ 05_25_13\ PM.png);
+    /* background-image: url(img/ChatGPT\ Image\ Mar\ 10\,\ 2026\,\ 05_25_13\ PM.png);
     background-size:cover;
     background-position:top;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
-    .cell{
-        /* color:red; */
-        border: 1px solid rgba(255, 5, 5,0);
-    }
     .fa-gear{
         font-size: 27px;
         position: absolute;
@@ -141,7 +137,7 @@ button{
     }
 }
 
-@media (max-width:414px) {
+/* @media (max-width:414px) {
     .container{
     width: 60%;
     height: 30%;
@@ -177,7 +173,7 @@ button{
     background-repeat: no-repeat;
 }
 
-}
+} */
 
 
 
