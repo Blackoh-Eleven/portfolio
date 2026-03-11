@@ -330,17 +330,22 @@
 
 
 
+ let setbox = document.getElementById('settingsbox')
+ let setboxes = window.getComputedStyle(setbox)
+
+//  console.log(setboxes)
+ 
 
 
+document.getElementById('settings').addEventListener('click',function(){
+  
+   console.log(setboxes.display)
 
-    // if(mypick.includes(e.target) ){
-    //     console.log(mypick)
-
-    //     computerpick = ''
-    // }else{}
-
-
-
+   if(setboxes.display === 'none'){
+    console.log('almost')
+    setbox.style.display = 'grid'
+   }else{setbox.style.display = 'none'}
+})
 
 
 
