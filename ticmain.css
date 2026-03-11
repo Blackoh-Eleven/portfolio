@@ -33,7 +33,7 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
-    font-size: clamp(18px,4vw,30px);
+    font-size: clamp(25px,4vw,30px);
     font-weight: bold;
     /* background:transparent; */
 }
@@ -144,7 +144,7 @@ button{
 @media (max-width:414px) {
     .container{
     width: 60%;
-    height: 40%;
+    height: 30%;
     background-image: url(img/ChatGPT\ Image\ Mar\ 10\,\ 2026\,\ 05_25_13\ PM.png);
     background-size:initial-scale;
     background-position:top;
