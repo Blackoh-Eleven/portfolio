@@ -1,0 +1,94 @@
+body{
+    background:#27313a;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+
+
+
+.spacetaker{
+    height: 5px;
+    background: #27313a;
+    width: 100%;
+    /* background:red; */
+}
+
+.container{
+    width: 100%;
+}
+
+nav{
+    /* background:red; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom:1px solid rgba(20, 11, 11, 0.1);
+
+
+}
+
+nav a {
+    display: flex;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-weight:bold;
+    /* justify-content: center; */
+    /* position: absolute; */
+}
+
+nav a img {
+    width: 8%;
+    height: 4%;
+    border-radius:50%;
+    position: absolute;
+    top: 1%;
+}
+
+nav a h3{
+    color:#000;
+    position: relative;
+    left: 44%;
+    /* bottom:4px; */
+    font-family: sans-serif;
+    font-size: 17px;
+
+}
+
+nav > .useApp{
+    /* background:rgba(72, 235, 50, 0.7); */
+    background:#4BCC00;
+    height: 30px;
+    border-radius:0;
+    font-size: 13px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color:#ffffff;
+    border-radius:10px;
+    width: 20%;
+    box-shadow:0px 4px rgb(17, 145, 17);
+    border:none;
+}
+
+
+@media (max-width:440px) {
+    body{
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container{
+        background: #ffffff;
+        width:102%;
+        position: relative;
+        right: 5px;
+        height: 100vh;
+        overflow-x: hidden;
+    }
+
+    nav>.useApp{position: relative;right: 9px;}
+}
