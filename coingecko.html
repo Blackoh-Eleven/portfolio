@@ -3,20 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="coingecko.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/8eaba6d24e.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoinGecko</title>
 </head>
 <body>
     <div class="spacetaker"></div>
     <div class="container">
-        <nav>
-             <a href="index.html"><img src="img/coingecko logo.png" width="5%" height="5%" style="opacity:1 ;"><h3>coingecko </h3></a>
-              <button class="useApp">Use App</button>
+
+        <div class="nav-area">
+            <nav class="nav-wrapper">
+        <nav class="nav-list">
+            <li class="coins">Coins: <span>16,042</span></li>
+            <li class="exchange">Exchanges: <span>1,187</span></li>
+            <li class="marketcap">Market cap: <span>$3.3663T</span>  <i class="bi bi-caret-down-fill"><span>0.8%</span></i> </li>
+            <li>24h vol: <span>$469.287B</span></li>
+            <li>Dominance: <span>BTC 52.8% ETH 12.4%</span></li>
+            <li>Gas: <span>13.748 GWEI</span></li>
+        </nav>
         </nav>
 
+ 
+     <div class="button-nav">
+            <li><button class="settings-btn"><i class="fa-solid fa-gear"></i></button></li>  
+            <li class="login-button"><button>Login</button></li> 
+            <li><button class="signup-button">sign up</button></li>
+     </div>
+    </div>
 
-        <h1>Page Stil Under Construction</h1>
+
+<nav class="nav2">
+
+
+       
+
+
+    
+        <nav class="nav2-left">
+            <i class="fa-solid fa-bars" onclick="showmenu()" id="bars"></i>
+            <a href="index.html" class="img-logo"><img src="img/coingecko-logo.svg" width="15%" height="5%" style="opacity:1 ;"> </a>
+            <li class="sec-nav">Cryptocurrencies</li>
+            <li class="sec-nav">Exchanges</li>
+            <li class="sec-nav">NFT</li>
+            <li class="sec-nav">Learn</li>
+            <li class="sec-nav">Products</li>
+            <li class="sec-nav">API</li>
+        </nav>
+
+        <div class="useapp">Get App</div>
+
+
+
+
+        <nav class="nav2-right">
+                <img class="candyimg" src="img/candy.png">
+                <li class="candy" >Candy</li>
+                <li class="port" > <i class="bi bi-star-fill"></i> Portfolio</li>
+                <input type="text" placeholder="Search" id="searchBox" class="search-box">
+                <i class="bi bi-search"></i>
+                 <span class="slash-square">/</span>
+        </nav>
+        
+    </nav>
+
+
+
+        <!-- <h1>Page Stil Under Construction</h1> -->
 
     </div>
+
+
+
+    <!-- <script>
+const navList = document.querySelector('.nav-list')
+
+let move = 0 -->
+
+// document.querySelector('.right').addEventListener('click', () => {
+//     move -= 120
+//     navList.style.transform = `translateX(${move}px)`
+// })
+
+// document.querySelector('.left').addEventListener('click', () => {
+//     move += 120
+//     navList.style.transform = `translateX(${move}px)`
+// })
+<!-- //     </script> -->
 </body>
 </html>

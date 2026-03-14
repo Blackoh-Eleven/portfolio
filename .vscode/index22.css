@@ -1,0 +1,27 @@
+.nav-area{
+    height:40px;
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid rgba(196,193,193,0.3);
+}
+
+.nav-wrapper{
+    overflow:hidden;
+    width:90%;
+}
+
+.nav-list{
+    display:flex;
+    list-style:none;
+    gap:1em;
+    font-size:11px;
+    white-space:nowrap;
+    transition:transform 0.3s ease;
+}
+
+.arrow{
+    font-size:20px;
+    cursor:pointer;
+    padding:0 10px;
+    user-select:none;
+}

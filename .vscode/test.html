@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index22.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="nav-area">
+
+    <div class="arrow left">&#10094;</div>
+
+    <div class="nav-wrapper">
+        <ul class="nav-list">
+            <li>Coins: <span>16,042</span></li>
+            <li>Exchanges: <span>1,187</span></li>
+            <li>Market cap: <span>$3.36T</span></li>
+            <li>24h vol: <span>$120B</span></li>
+            <li>Dominance: <span>BTC 54%</span></li>
+            <li>ETH Gas: <span>12 Gwei</span></li>
+        </ul>
+    </div>
+
+    <div class="arrow right">&#10095;</div>
+
+</div>
+
+
+<script>
+ const navList = document.querySelector('.nav-list')
+
+let move = 0
+
+document.querySelector('.right').addEventListener('click', () => {
+    move -= 120
+    navList.style.transform = `translateX(${move}px)`
+})
+
+document.querySelector('.left').addEventListener('click', () => {
+    move += 120
+    navList.style.transform = `translateX(${move}px)`
+})
+</script>
+</body>
+</html>
