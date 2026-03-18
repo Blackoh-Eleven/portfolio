@@ -72,7 +72,94 @@
 
         <!-- <h1>Page Stil Under Construction</h1> -->
 
+
+        
+<div class="add-place"></div>
+
+<div class="header-place">
+    <div class="textplace">
+    <h2>Cryptocurrency Prices by Market Cap</h2>
+    <p>The global Cryptocurrency market cap is $3.67 Trillion, a <i class="bi bi-caret-down-fill"><span>2.2%</span></i>  change in the last 24hours. <span><U>Read more</U></span></p>
     </div>
+
+    <div class="wholeswitch"> <span>Highlights</span>
+      <div class="switch" onclick="toggleSwitch(this)"> 
+        <div class="slider"></div>
+     </div>
+   </div>
+
+
+   
+    </div>
+
+
+    <div class="all-box">
+
+    <div class="first-twobox">
+        
+    <li class="box-1"> <span>$3,767,408,510,286</span>  <span2><br>Market cap<i class="bi bi-caret-up-fill">2.2%</i></span2> <div class="canvas"><canvas id="mychart"></canvas> </div> </li>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ 
+    <li class="box-2"> <span>$304,798,794,404</span>  <br><span2>24h Trading Volume<i class="bi bi-caret-down-fill">2.2%</i></span2>  <div><canvas id="mychartBox2"></canvas></div></li>
+   </div>
+
+    <li class="box-3"> 
+        <span class="top"> <span1> &#x1f525; Trending </span1> <span2>view more > </span2> </span>
+
+        <div class="first-box3">
+            <div class="coininfo">
+            <img src="img/akuama inu.jfif" >
+            <span>akuama Inu</span>
+            </div>
+            <span2>$0.075269 <i class="bi bi-caret-down-fill">2.2% </i></span2></div>
+
+        <div class="second-box3">
+            <div class="coininfo">
+                <img src="img/pudgy penguins.jfif">
+                 <span> Pudgy penguins</span> 
+                </div>
+                <span2>$0.025209 <i class="bi bi-caret-down-fill">9.4% </i></span2></div>
+
+        <div class="third-box3">
+            <div class="coininfo">
+              <img src="img/tmai.jfif" > 
+              <span>Token Metrics AI</span> 
+              </div>
+              <span2>$0.098232 <i class="bi bi-caret-down-fill">2.0% </i></span2></div>
+    </li>
+    <li class="box-4"> 
+
+        <span class="top2"> <span1> &#128640; Largest Gainers </span1> <span2>view more > </span2> </span>
+
+        <div class="first-box4">
+            <div class="coininfo"><img src="img/ai rig complex.jfif" >
+                <span>AI Rig Complex</span>
+                </div>
+                 <span2>$0.054232 <i class="bi bi-caret-up-fill">1.2% </i></span2></div>
+
+        <div class="second-box4">
+            <div class="coininfo">
+                <img src="img/openloot.jfif"> 
+                <span> Open Loot</span> 
+                </div>
+                <span2>$0.562765 <i class="bi bi-caret-up-fill">5.5% </i></span2></div>
+
+        <div class="third-box4">
+            <div class="coininfo">
+                <img src="img/fartcoin.jfif" >
+                 <span>Fartcoin</span>
+                 </div>
+                  <span2>$0.663776 <i class="bi bi-caret-up-fill">6.4% </i></span2></div>
+    </li>
+  </div> 
+<!-- </div> -->
+    
+
+
+
+
+
 
 
 
@@ -81,7 +168,7 @@ const navList = document.querySelector('.nav-list')
 
 let move = 0 -->
 
-// document.querySelector('.right').addEventListener('click', () => {
+<!-- // document.querySelector('.right').addEventListener('click', () => {
 //     move -= 120
 //     navList.style.transform = `translateX(${move}px)`
 // })
@@ -89,7 +176,10 @@ let move = 0 -->
 // document.querySelector('.left').addEventListener('click', () => {
 //     move += 120
 //     navList.style.transform = `translateX(${move}px)`
-// })
+// }) -->
 <!-- //     </script> -->
+
+
+<script src="coingecko.js"></script>
 </body>
 </html>

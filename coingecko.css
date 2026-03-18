@@ -269,6 +269,518 @@ a img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-place{
+    background-color: rgba(0, 0, 0, 0.09);
+    height: 13vh;
+    width: 50em;
+    margin: 0 auto;
+    /* position: relative;
+    bottom: 20px;
+    left: 18em; */
+}
+.header-place{
+    /* background-color: green; */
+    padding: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+
+/* .textplace{
+    display: grid;
+    gap: 3px;
+} */
+
+.header-place  h2  {
+    /* position: relative;
+    left: 2.1em; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 15px ;
+    margin: 0;
+    color: rgb(27, 25, 25)
+    /* background:red;   */
+}
+.header-place  p  {
+    /* position: relative;
+    left: 3em; */
+    /* color: grey; */
+    color: #515a63;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+/* .header-place>p> span{
+    /* color: black; */
+    /* color: #515a63; */
+    /* font-weight: bold; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+/* } */
+
+.wholeswitch{
+    /* background-color: blue; */
+    height: 30px;
+    max-width: fit-content;
+    /* float: right; */
+    /* position: relative;
+    bottom: 40px;
+    right: -74em; */
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    
+}
+
+u{
+    cursor:pointer;
+}
+
+.wholeswitch  span{
+    /* position: relative; */
+    top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: rgb(67, 80, 83);
+
+    /* background:red; */
+}
+
+
+.switch{
+    position: relative;
+    width: 50px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.slider{
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 22%;
+    transition: transform 0.3s ease;
+    /* border: 2px solid black; */
+}
+
+.switch.checked{
+    background-color: #4caf50;
+}
+.switch.checked .slider{
+    transform: translateX(25px);
+    border: 2px solid #4caf50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.all-box{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    /* background:green; */
+    width: 96vw;
+    padding: 25px;
+    padding-top: 10px;
+    gap: 20px;
+    /* justify-content: space-between; */
+    align-items:center;
+    /* border: 1px solid blue; */
+
+}
+
+.all-box .bi-caret-down-fill,.all-box .bi-caret-up-fill{
+    font-size: 12px;
+}
+
+
+
+
+.all-box img{
+    width: 10%;
+    border-radius:50%;
+    /* margin-top: -25px; */
+    position: relative;
+    top: 5px;
+    background:blue;
+}
+
+.first-twobox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.box-1{
+    /* background:red; */
+    width: 37vw;
+    height: 8em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.box-1> span{
+    position: relative; 
+    /* top: 10px; */
+   font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    color: rgb(38, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-1>span2{
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+    position: relative;
+    top: 15%; 
+}
+/*first box green */
+.box-1 > div {
+    background-color: green;
+    position: relative; 
+    left: 230px;
+    bottom: 44.5px;
+    width: 17em;
+    height: 15vh;
+    
+}
+
+.box-2{
+    /* background:red; */
+    width: 37vw;
+    height: 8em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.box-2> span{
+    position: relative; 
+    top: 10px;
+   font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    color: rgb(38, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-2 > span2{
+    position: relative;
+    top: 20px;
+    /* left: 10px; */
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+}
+
+/*second box red */
+.box-2 > div{
+    background-color: red;
+    position: relative;
+    left: 230px;
+    bottom: 44px;
+    width: 17em;
+    height: 15vh;
+}
+
+
+
+
+.box-3{
+    height: 28vh;
+    padding: 20px 10px ;
+    width: 32em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    /* gap: 40px; */
+    align-items:center;
+    justify-content: center;
+}
+
+span.top{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    /* width: 300px; */
+    height: 25px;
+}
+
+.box-3 > span1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div.coininfo{
+    border:0px solid black;
+} */
+
+.first-box3,.second-box3,.third-box3{
+    display:flex;
+    /* background:red; */
+    justify-content: center;
+    align-items:center;
+    /* gap: 10px; */
+}
+
+.first-box3 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.first-box3 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+.second-box3 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.second-box3 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+
+
+.third-box3 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.third-box3 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-4{
+     height: 28vh;
+    padding: 20px 10px ;
+    width: 32em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.first-box4,.second-box4,.third-box4{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+.first-box4 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.first-box4 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+.second-box4 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.second-box4 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+
+
+.third-box4 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.third-box4 span2{
+    display: inline;
+    width: 210px;
+    margin: 0 auto;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1024px) {
     body{
         /* display: grid; */
@@ -283,18 +795,25 @@ a img{
 
     .container{
         width: 105%;
-        overflow: hidden;
+        overflow-x: hidden;
+    }
+
+    .add-place{
+        /* display: none; */
+        position: relative;
+        top: 18%;
     }
 
 
     .nav-area{
-        height: 30px;
-        position: absolute;
+        height: 20px;
+        position: relative;
         top: 28%;
         border-top:1px solid rgba(196, 193, 193, 0.3);
     }
 
     .nav-wrapper{
+        position: relative;
         display: flex;
         width: 105vw;
         padding: 10px;
@@ -376,13 +895,17 @@ i.bi-caret-down-fill{
     height: 23px;
 }
 
+.nav2-right{
+    position: relative;
+}
+
 
 .search-box{
     position: absolute;
     height: 35px;
-    top: 15%;
-    left: 3%;
-    width: 94%;
+    top: 105%;
+    right: 3%;
+    width: 94vw;
     display: flex;
     font-size: 12px;
 }
@@ -393,22 +916,22 @@ i.bi-caret-down-fill{
 
 
 .bi-search{
-    position: absolute;
+    position: relative;
     font-size: 13px;
-    left: 5%;
-    top: 19%;
+    left: -215%;
+    top: 110%;
     font-weight: bold;
 }
 
 
 .slash-square{
     position: absolute;
-    left: 96%;
-    top: 18.5%;
+    left: 85%;
+    top: 135%;
     font-size: 15px;
     font-weight: bolder;
     border:0px solid gray;
-    width: 2%;
+    width: 7%;
     aspect-ratio:1/1;
     /* text-align: center; */
     display: flex;
@@ -417,6 +940,294 @@ i.bi-caret-down-fill{
     color:#000;
     background:rgb(204, 199, 199);
     border-radius:3px;
+}
+
+.header-place{
+    position: relative;
+    top: 20%;
+}
+
+
+.all-box{
+    justify-content: center;
+    display: grid;
+    margin-top:10%;
+}
+
+.all-box img{
+    width: 10%;
+    border-radius:50%;
+    /* margin-top: -25px; */
+    position: relative;
+    top: 5px;
+    background:blue;
+}
+
+/* .first-twobox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+
+
+
+
+.box-1{
+    /* background:red; */
+    width: 87vw;
+    height: 8em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.box-1> span{
+    position: relative; 
+    /* top: 10px; */
+   font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    color: rgb(38, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-1>span2{
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+    position: relative;
+    top: 15%; 
+}
+/*first box green */
+.box-1 > div {
+    background-color: green;
+    position: relative; 
+    left: 510px;
+    bottom: 42.5px;
+    width: 17em;
+    height: 17vh;
+    
+}
+
+.box-2{
+    /* background:red; */
+    width: 87vw;
+    justify-self: center;
+    height: 8em;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.box-2> span{
+    position: relative; 
+    top: 10px;
+   font-size: clamp(16px, 2vw, 20px);
+    font-weight: bold;
+    color: rgb(38, 37, 37);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-2 > span2{
+    position: relative;
+    top: 20px;
+    /* left: 10px; */
+    font-weight: bold;
+    font-size: 14px;
+    color: grey;
+}
+
+/*second box red */
+
+canvas#mychart{
+    /* width: fit-content; */
+    width: 165px;
+    height: 78px;
+}
+
+canvas#mychartBox2{
+    width: 165px;
+    height: 78px;
+}
+.box-2 > div{
+    background-color: red;
+    position: relative;
+    left: 510px;
+    bottom: 38px;
+    width: 17em;
+    height: 15vh;
+}
+
+
+
+
+.box-3{
+    height: fit-content;
+    /* padding: 20px 10px ; */
+    width: 86vw;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    gap: 10px;
+    justify-self: center;
+
+}
+
+span.top{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    width: 650px;
+    height: 25px;
+}
+
+.box-3 > span1{
+    /* font-size: 28px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div.coininfo{
+    border:0px solid black;
+} */
+
+.first-box3,.second-box3,.third-box3{
+    display:flex;
+    /* background:red; */
+    /* justify-content: center; */
+    align-items:center;
+    /* font-size: 17px; */
+    /* gap: 40px; */
+
+}
+
+.first-box3 span{
+    font-size: 15px;
+    font-weight: 500;
+    color:black;
+}
+
+.first-box3 span2{
+    display: inline;
+    width: 340px;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    text-align: end;
+    /* background:blue; */
+}
+
+
+.second-box3 span{
+    font-size: 15px;
+    font-weight: 500;
+    color:black;
+}
+
+.second-box3 span2{
+    display: inline;
+    width: 320px;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    text-align: end;
+}
+
+
+
+
+.third-box3 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+}
+
+.third-box3 span2{
+    display: inline;
+    width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-4{
+    width: 86vw;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    gap: 10px;
+    justify-self: center;
+}
+
+
+.first-box4,.second-box4,.third-box4{
+    display:flex;
+    /* justify-content: center; */
+    align-items:center;
+}
+
+
+
+.first-box4 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+}
+
+.first-box4 span2{
+    display: inline;
+    width: 320px;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    text-align: end;
+}
+
+
+.second-box4 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+}
+
+.second-box4 span2{
+    display: inline;
+    width: 380px;
+    /* margin: 0 auto; */
+    font-size: 14px;
+    text-align: end;
+}
+
+
+
+
+.third-box4 span{
+    font-size: 12px;
+    font-weight: 300;
+    color:black;
+}
+
+.third-box4 span2{
+    display: inline;
+    width: 380px;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: end;
 }
 
     
@@ -471,7 +1282,7 @@ i.bi-caret-down-fill{
     }
     
     .container{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
 
     }
 
@@ -588,9 +1399,318 @@ a img{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-place{
+        position: relative;
+        top: 8%;
+
+}
+
+.header-place{
+    position: relative;
+    top: 7%;
+    display: block;
+    /* background:blue; */
+
+
+}
+
+
+.all-box{
+    position: relative;
+    top: 5%;
+}
+
+.all-box img{
+    width: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-3{
+    height: fit-content;
+    /* padding: 20px 10px ; */
+    width: 86vw;
+    border-radius: 10px;
+    border: 1px solid grey;
+    /* display: grid;
+    gap: 10px;
+    justify-self: center; */
+
+}
+
+.box-3 img{
+    width: 15%;
+    position: relative;
+    /* top: 15%; */
+}
+
+span.top{
+    display: flex;
+    /* justify-content: space-between; */
+    font-weight: 700;
+    font-size: 12px;
+    width: 85vw;
+    /* width: 650px; */
+    height: 25px;
+    /* position: relative; */
+    /* left: 2%; */
+    /* gap: 30px; */
+    
+}
+
+.box-3 > span1{
+    /* font-size: 28px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.first-box3,.second-box3,.third-box3{
+    display: flex;
+    width: 300px;
+    position: relative;
+    left: 3px;
+
+}
+
+
+.first-box3 .coininfo span{
+    display: inline;
+    width: 120px;
+}
+
+
+
+.first-box3 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom: 10px;
+}
+
+.first-box3 span2{
+    position: relative;
+    width: 70px;
+    display: flex;
+}
+
+
+
+
+.second-box3 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom:9px;
+}
+
+.second-box3 span2{
+    position: relative;
+    width: 70px;
+    display: flex;
+    font-size: 14px;
+
+}
+
+
+
+
+.third-box3 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom:9px;
+}
+
+.third-box3 span2{
+        position: relative;
+    width: 70px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-4{
+    width: 86vw;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid grey;
+    display: grid;
+    gap: 10px;
+    /* justify-self: center; */
+    /* position: absolute; */
+}
+
+.box-4 img{
+    width: 15%;
+}
+
+.first-box4,.second-box4,.third-box4{
+    display:flex;
+    /* justify-content: center; */
+    align-items:center;
+    position: relative;
+    gap: 0px;
+    width: 80vw;
+    /* left: 3%; */
+}
+.top2{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 12px;
+    height: 25px;
+}
+
+
+.first-box4 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom:9px;
+}
+
+.first-box4 span2{
+    display: inline;
+    width: 320px;
+    font-size: 14px;
+    /* margin: 0 auto; */
+    text-align: end;
+}
+
+
+.second-box4 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom:9px;
+}
+
+.second-box4 span2{
+    display: inline;
+    width: 380px;
+    /* margin: 0 auto; */
+    font-size: 14px;
+    text-align: end;
+}
+
+
+
+
+.third-box4 span{
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    position: relative;
+    bottom:5px;
+}
+
+.third-box4 span2{
+    display: inline;
+    width: 380px;
+    font-size: 14px;
+    /* font-weight: bold; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .nav-list .coins,.nav-list .exchange,.slash-square,.bi-search{
         display: none;
     }
+
+
 }
 
 
