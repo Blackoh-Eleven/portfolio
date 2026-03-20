@@ -320,20 +320,33 @@ aside{
 
 .mainimg{
     padding: 8.5em 8em;
-    border-radius:10px;
-     background-image:url(img/neon.jpg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
-     /* background-image:url(img/profile.jpeg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
-     background:transparent; */
+    /* border-radius:10px; */
+    border-radius:20%;
+     /* background-image:url(img/neon.jpg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9)); */
+     /* background-image:url(img/me_raw-removebg-preview.png),linear-gradient(360deg ,rgba(105, 74, 105,0.7),rgba(0, 0, 0,0.9)); */
+     /* background:transparent; */
+     background-image:
+    linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.3)),
+    url(img/me_raw-removebg-preview.png);
      background-position: center;
      background-size:cover;
      background-blend-mode: overlay;
      border:0;
      outline: none;
      min-width: 0;
-     /* filter: drop-shadow(0 0 20px rgba(105, 5, 105, 0.9)); */
+     filter: drop-shadow(0 0 20px rgba(105, 5, 105, 0.4));
      /* filter: drop-shadow(0 0 20px linear-gradient(135deg, rgba(105, 5, 105, 0.9),rgba(146,20,80,0.9))); */
-     filter:drop-shadow(0 0 20px rgba(146,20,80,0.9))
+     /* filter:drop-shadow(0 0 20px rgba(146,20,80,0.9)) */
 }
+
+/* .mainimg::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(img/me_raw-removebg-preview.png) center/cover no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+} */
 
 .rightbox{
     padding: 25px 13px 25px 13px;
