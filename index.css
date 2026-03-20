@@ -334,7 +334,7 @@ aside{
      border:0;
      outline: none;
      min-width: 0;
-     filter: drop-shadow(0 0 20px rgba(105, 5, 105, 0.4));
+     filter: drop-shadow(0 0 20px rgba(105, 5, 105, 0.8));
      /* filter: drop-shadow(0 0 20px linear-gradient(135deg, rgba(105, 5, 105, 0.9),rgba(146,20,80,0.9))); */
      /* filter:drop-shadow(0 0 20px rgba(146,20,80,0.9)) */
 }
