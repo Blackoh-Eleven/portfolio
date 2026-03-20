@@ -539,7 +539,7 @@ u{
 }
 /*first box green */
 .box-1 > div {
-    background-color: green;
+    /* background-color: green; */
     position: relative; 
     left: 230px;
     bottom: 44.5px;
@@ -578,7 +578,7 @@ u{
 
 /*second box red */
 .box-2 > div{
-    background-color: red;
+    /* background-color: red; */
     position: relative;
     left: 230px;
     bottom: 44px;
@@ -601,7 +601,7 @@ u{
     justify-content: center;
 }
 
-span.top{
+span.top,.top2{
     display: flex;
     justify-content: space-between;
     font-weight: 700;
@@ -960,7 +960,7 @@ i.bi-caret-down-fill{
     /* margin-top: -25px; */
     position: relative;
     top: 5px;
-    background:blue;
+    /* background:blue; */
 }
 
 /* .first-twobox{
@@ -1000,7 +1000,7 @@ i.bi-caret-down-fill{
 }
 /*first box green */
 .box-1 > div {
-    background-color: green;
+    /* background-color: green; */
     position: relative; 
     left: 510px;
     bottom: 42.5px;
@@ -1051,7 +1051,7 @@ canvas#mychartBox2{
     height: 78px;
 }
 .box-2 > div{
-    background-color: red;
+    /* background-color: red; */
     position: relative;
     left: 510px;
     bottom: 38px;

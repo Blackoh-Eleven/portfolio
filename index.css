@@ -322,6 +322,8 @@ aside{
     padding: 8.5em 8em;
     border-radius:10px;
      background-image:url(img/neon.jpg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
+     /* background-image:url(img/profile.jpeg),linear-gradient(360deg ,rgba(105, 74, 105,0.6),rgba(0, 0, 0,0.9));
+     background:transparent; */
      background-position: center;
      background-size:cover;
      background-blend-mode: overlay;
