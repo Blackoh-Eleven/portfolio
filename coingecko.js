@@ -18,11 +18,22 @@ function toggleSwitch(element){
 
     // ///////////////for 24hr trading volumne
     let tradingvol = Math.round(data.data.total_volume.usd)
+    let volumeshort = (tradingvol/1e9).toFixed(3)
+    document.getElementById('volumeshort').innerText = `$${volumeshort}T`
     let hrschange = tradingvol.toLocaleString('en-US')
     document.getElementById('24hrsvol').innerText = '$'+hrschange
 
     /////////////for  BTC Dominance
-    // console.log(data.data.market_cap_percentage.btc); // BTC dominance
+    console.log(data.data.market_cap_percentage.btc); // BTC dominance
+    let btcdominance = data.data.market_cap_percentage.btc.toFixed(1)
+    console.log(btcdominance)
+    let ethdominance = data.data.market_cap_percentage.eth.toFixed(1)
+    console.log(ethdominance)
+    document.getElementById('btcdominance').innerText = `BTC ${btcdominance}%  ETH ${ethdominance}%`
+
+    // //////////for Eth dominanace
+    console.log(data.data)
+
   })
 
   .catch(err => console.error(err));
