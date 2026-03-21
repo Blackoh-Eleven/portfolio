@@ -824,3 +824,25 @@ let move = 0 -->
 <!-- //     </script> -->
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&x_cg_demo_api_key=CG-M64VHYTiBjBmiaia8xqJtU1q")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+
+
