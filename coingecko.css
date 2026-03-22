@@ -1352,6 +1352,20 @@ span.top{
     i.bi-caret-down-fill span{
     font-size: 9px;
    }
+
+
+      i.bi-caret-up-fill{
+    color: rgb(42, 212, 42);
+    font-size: 8px;
+    font-family: 'arial';
+    display: flex;
+    word-spacing: 12px;
+    align-items:center;
+}
+
+    i.bi-caret-up-fill span{
+    font-size: 9px;
+   }
     
 
     .nav2{
