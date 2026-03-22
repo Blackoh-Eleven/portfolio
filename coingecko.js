@@ -4,9 +4,10 @@ function toggleSwitch(element){
 
  const apiKey = "CG-M64VHYTiBjBmiaia8xqJtU1q";
  let oldvalue = null
- setInterval(()=>{
+//  let globalsignalicons = document.querySelectorAll(".globalredorgreen")
 
-    
+ function getmarketcap(){
+     let globalsignalicons = document.querySelectorAll(".globalredorgreen")
  fetch(`https://api.coingecko.com/api/v3/global?x_cg_demo_api_key=${apiKey}`)
   .then(res => res.json())
   .then(data => {
@@ -19,20 +20,37 @@ function toggleSwitch(element){
     if(oldvalue !== null){
         if(newvalue >oldvalue){
             console.log('it is green')
-            document.getElementById('redorgreen').className = "bi bi-caret-up-fill"
+             
+             globalsignalicons.forEach(gsi => {
+             gsi.classList.remove("i.bi-caret-down-fill");
+              gsi.classList.add(".bi-caret-up-fill");
+});
         }else if(newvalue < oldvalue){
             console.log('it is red')
-            document.getElementById('redorgreen').className = "bi bi-caret-down-fill"
+            
+           globalsignalicons.forEach(gsi => {
+           gsi.classList.remove("bi-caret-up-fill");
+           gsi.classList.add("i.bi-caret-down-fill");
+});
 
         }else {console.log('nothing changed')}
     }
     oldvalue = newvalue
     console.log('old value is:',oldvalue)
 
+    let globalpercentage = ((oldvalue-newvalue)/oldvalue) * 100
+    console.log(globalpercentage)
+   let allglobal =  document.querySelectorAll(".redorgreenpercentage");
+    allglobal.forEach(alls=>{
+        alls.innerText =  `${globalpercentage}%`
+    })
+
 
     let marketcap = marketcapnumbers.toLocaleString('en-US')
     let short = (marketcapnumbers/1e12).toFixed(3)
+    let shortfigurewords =  (marketcapnumbers/1e12).toFixed(2)
     document.getElementById('marketshort').innerText = '$'+short+'T'
+    document.getElementById('figurewords').innerText = `$ ${shortfigurewords}`
     // console.log(Math.round(marketcapnumbers))
     document.getElementById('totalmarketcap').innerText = '$'+marketcap
 
@@ -58,9 +76,11 @@ function toggleSwitch(element){
 
   .catch(err => console.error(err));
 
+}
 
+getmarketcap()
 
- },10000)
+setInterval(getmarketcap,10000)
 
 //  fetch(`https://api.coingecko.com/api/v3/global?x_cg_demo_api_key=${apiKey}`)
 //   .then(res => res.json())
