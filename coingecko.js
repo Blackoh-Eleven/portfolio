@@ -3,40 +3,54 @@ function toggleSwitch(element){
 }
 
  const apiKey = "CG-M64VHYTiBjBmiaia8xqJtU1q";
- let oldvalue = null
+//  let oldvalue = null
 
  function getmarketcap(){
      let globalsignalicons = document.querySelectorAll(".globalredorgreen")
  fetch(`https://api.coingecko.com/api/v3/global?x_cg_demo_api_key=${apiKey}`)
   .then(res => res.json())
   .then(data => {
+
+
+// for coins ///////////////////
+    let coins = data.data.active_cryptocurrencies.toLocaleString()
+    document.getElementById('spanactivecoins').innerText = coins
+    // console.log(coins)
+
+    // for exchanges ////////////////////
+    let exchanges = data.data.markets.toLocaleString()
+    document.getElementById('spanexchange').innerText = exchanges
+
     // console.log(data)
     ////////////////// for marketcap
     let marketcapnumbers =  Math.round(data.data.total_market_cap.usd)
 
-     let newvalue = marketcapnumbers
+    //  let newvalue = marketcapnumbers
 
 
 
-    if(oldvalue !== null){
+    // if(oldvalue !== null){
 
-    let globalpercentage = ((newvalue-oldvalue)/oldvalue) * 100
-    console.log(globalpercentage)
+    // let globalpercentage = ((newvalue-oldvalue)/oldvalue) * 100
+    let globalpercentage = data.data.market_cap_change_percentage_24h_usd
+    // console.log(globalpercentage)
    let allglobal =  document.querySelectorAll(".redorgreenpercentage");
     allglobal.forEach(alls=>{
         alls.innerText =  `${globalpercentage.toFixed(1)}%`
     })
 
     
-        if(newvalue >oldvalue){
-            console.log('it is green')
+        // if(newvalue >oldvalue){
+        if(globalpercentage >= 0){
+            // console.log('it is green')
              
              globalsignalicons.forEach(gsi => {
              gsi.classList.remove("bi-caret-down-fill");
               gsi.classList.add("bi-caret-up-fill");
 });
-        }else if(newvalue < oldvalue){
-            console.log('it is red')
+        // }else if(newvalue < oldvalue){
+        }else if(globalpercentage < 0){
+            // console.log('it is red')
             
            globalsignalicons.forEach(gsi => {
            gsi.classList.remove("bi-caret-up-fill");
@@ -44,11 +58,11 @@ function toggleSwitch(element){
 });
 
         }else {console.log('nothing changed')}
-    }
-    oldvalue = newvalue
-    console.log('old value is:',oldvalue)
+    // }
+    // oldvalue = newvalue
+    // console.log('old value is:',oldvalue)
 
-    console.log('newvalue:',newvalue)
+    // console.log('newvalue:',newvalue)
 
 
 
@@ -89,7 +103,7 @@ function toggleSwitch(element){
 
 getmarketcap()
 
-setInterval(getmarketcap,10000)
+setInterval(getmarketcap,60000)
 
 //  fetch(`https://api.coingecko.com/api/v3/global?x_cg_demo_api_key=${apiKey}`)
 //   .then(res => res.json())
