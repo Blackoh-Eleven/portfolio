@@ -4,7 +4,6 @@ function toggleSwitch(element){
 
  const apiKey = "CG-M64VHYTiBjBmiaia8xqJtU1q";
  let oldvalue = null
-//  let globalsignalicons = document.querySelectorAll(".globalredorgreen")
 
  function getmarketcap(){
      let globalsignalicons = document.querySelectorAll(".globalredorgreen")
@@ -17,20 +16,31 @@ function toggleSwitch(element){
 
      let newvalue = marketcapnumbers
 
+
+
     if(oldvalue !== null){
+
+    let globalpercentage = ((newvalue-oldvalue)/oldvalue) * 100
+    console.log(globalpercentage)
+   let allglobal =  document.querySelectorAll(".redorgreenpercentage");
+    allglobal.forEach(alls=>{
+        alls.innerText =  `${globalpercentage.toFixed(1)}%`
+    })
+
+    
         if(newvalue >oldvalue){
             console.log('it is green')
              
              globalsignalicons.forEach(gsi => {
-             gsi.classList.remove("i.bi-caret-down-fill");
-              gsi.classList.add(".bi-caret-up-fill");
+             gsi.classList.remove("bi-caret-down-fill");
+              gsi.classList.add("bi-caret-up-fill");
 });
         }else if(newvalue < oldvalue){
             console.log('it is red')
             
            globalsignalicons.forEach(gsi => {
            gsi.classList.remove("bi-caret-up-fill");
-           gsi.classList.add("i.bi-caret-down-fill");
+           gsi.classList.add("bi-caret-down-fill");
 });
 
         }else {console.log('nothing changed')}
@@ -38,12 +48,11 @@ function toggleSwitch(element){
     oldvalue = newvalue
     console.log('old value is:',oldvalue)
 
-    let globalpercentage = ((oldvalue-newvalue)/oldvalue) * 100
-    console.log(globalpercentage)
-   let allglobal =  document.querySelectorAll(".redorgreenpercentage");
-    allglobal.forEach(alls=>{
-        alls.innerText =  `${globalpercentage}%`
-    })
+    console.log('newvalue:',newvalue)
+
+
+
+
 
 
     let marketcap = marketcapnumbers.toLocaleString('en-US')
