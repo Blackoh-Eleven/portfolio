@@ -113,7 +113,7 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
        .then(res => res.json())
     //    .then(data=>{console.log(data)})
         .catch(err => {
-      console.error(`Failed to fetch market data for ${coinId}`, err);
+      console.error(`Failed to fetch market data for ${coinid}`, err);
       return null; // prevent breaking Promise.all
     });
 })
