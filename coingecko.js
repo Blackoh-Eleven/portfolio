@@ -87,7 +87,7 @@ setInterval(getmarketcap,60000)
 // Trending box
 
 
-
+async function trending(){
 fetch('https://api.coingecko.com/api/v3/search/trending')
   .then(res => res.json())
   .then(data => {
@@ -98,10 +98,10 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
 
     const promises = coins.map(coining=>{
-        coin = coining.item
+       let coin = coining.item
         // console.log(coin)   
         let coinid = coin.id
-        // console.log(coin.id)
+        console.log(coinid)
 
 
 
@@ -109,6 +109,7 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
 
     return fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coinid}`)
+    
        .then(res => res.json())
     //    .then(data=>{console.log(data)})
 
@@ -131,36 +132,22 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
       let pricepercent = coinData.price_change_percentage_24h
 
-    //   if(pricepercent >= 0){
-    //     document.getElementById("arrow").innerHTML = `<i class="bi bi-caret-up-fill"></i>`
-    //   }else if(pricepercent < 0){
-    //     document.getElementById("arrow").innerHTML = `<i class="bi bi-caret-down-fill"></i>`
-    //   }
-
-
             document.getElementById('priceandchanges').innerHTML += `
-          <span class="coinpricechange">$${coinData.current_price}${pricepercent > 0 ? `<i class="bi bi-caret-up-fill">${(coinData.price_change_percentage_24h).toFixed(2)}%</i>` : `<i class="bi bi-caret-down-fill" >${(coinData.price_change_percentage_24h).toFixed(2)}%</i>`}</span>
-        </li>
-      `;
+              <span class="coinpricechange">$${coinData.current_price}${
+                pricepercent > 0 
+                  ? `<i class="bi bi-caret-up-fill">${pricepercent.toFixed(2)}%</i>` 
+                  : `<i class="bi bi-caret-down-fill">${pricepercent.toFixed(2)}%</i>`
+              }</span> 
+            `;
         })
-    }).catch(err=>{console.error})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    })
 
 
   })
+
+}
+
+trending()
 
         
 
