@@ -112,8 +112,11 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
     
        .then(res => res.json())
     //    .then(data=>{console.log(data)})
-
-    })
+        .catch(err => {
+      console.error(`Failed to fetch market data for ${coinId}`, err);
+      return null; // prevent breaking Promise.all
+    });
+})
 
     return Promise.all(promises)
 
@@ -132,6 +135,14 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
       let pricepercent = coinData.price_change_percentage_24h
 
+                        document.getElementById('priceandchanges').innerHTML += `
+              <span class="coinpricechange">$${coinData.current_price}${
+                pricepercent > 0 
+                  ? `<i class="bi bi-caret-up-fill">${pricepercent.toFixed(2)}%</i>` 
+                  : `<i class="bi bi-caret-down-fill">${pricepercent.toFixed(2)}%</i>`
+              }</span> 
+            `;
+
 
         })
     })
@@ -145,13 +156,7 @@ trending()
 
         
 
-            // document.getElementById('priceandchanges').innerHTML += `
-            //   <span class="coinpricechange">$${coinData.current_price}${
-            //     pricepercent > 0 
-            //       ? `<i class="bi bi-caret-up-fill">${pricepercent.toFixed(2)}%</i>` 
-            //       : `<i class="bi bi-caret-down-fill">${pricepercent.toFixed(2)}%</i>`
-            //   }</span> 
-            // `;
+
 
 
 
