@@ -1543,120 +1543,39 @@ a img{
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
 .box-3{
     height: fit-content;
-    /* padding: 20px 10px ; */
-    width: 86vw;
-    border-radius: 10px;
-    border: 1px solid grey;
-    /* display: grid;
-    gap: 10px;
-    justify-self: center; */
-
+    width: 88vw;
 }
 
-.box-3 img{
-    width: 15%;
-    position: relative;
-    /* top: 15%; */
-}
-
-span.top{
-    display: flex;
-    /* justify-content: space-between; */
-    font-weight: 700;
-    font-size: 12px;
-    width: 85vw;
-    /* width: 650px; */
-    height: 25px;
-    /* position: relative; */
-    /* left: 2%; */
-    /* gap: 30px; */
-    
-}
-
-.box-3 > span1{
-    /* font-size: 28px; */
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.first-box3,.second-box3,.third-box3{
-    display: flex;
-    width: 300px;
-    position: relative;
-    left: 3px;
-
-}
-
-
-.first-box3 .coininfo span{
-    display: inline;
+#priceandchanges{
+    /* display: inline-flex; */
     width: 120px;
 }
 
-
-
-.first-box3 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom: 10px;
+.viewtext{
+  /* background:blue; */
+    /* color:red; */
+    width: 100px;
+    float: inline-end;
 }
 
-.first-box3 span2{
-    position: relative;
-    width: 70px;
+.coinpricechange{
+    /* display: inline; */
+    width: 100px;
     display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    gap: 5px;
+}
+
+li .flexingnameandicon{
+    text-align: right;
+    /* background:red; */
 }
 
 
 
-
-.second-box3 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom:9px;
-}
-
-.second-box3 span2{
-    position: relative;
-    width: 70px;
-    display: flex;
-    font-size: 14px;
-
-}
-
-
-
-
-.third-box3 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom:9px;
-}
-
-.third-box3 span2{
-        position: relative;
-    width: 70px;
-    display: flex;
-    margin: 0 auto;
-    font-size: 14px;
-}
 
 
 

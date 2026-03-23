@@ -139,12 +139,11 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
 
             document.getElementById('priceandchanges').innerHTML += `
-        <li class="flexingnameandicon">
-          <span class="coinpricechange">$${coinData.current_price}${pricepercent > 0 ? '<i class="bi bi-caret-up-fill"></i>' : '<i class="bi bi-caret-down-fill"></i>'}${coinData.price_change_percentage_24h}%</span>
+          <span class="coinpricechange">$${coinData.current_price}${pricepercent > 0 ? `<i class="bi bi-caret-up-fill">${(coinData.price_change_percentage_24h).toFixed(2)}%</i>` : `<i class="bi bi-caret-down-fill" >${(coinData.price_change_percentage_24h).toFixed(2)}%</i>`}</span>
         </li>
       `;
         })
-    })
+    }).catch(err=>{console.error})
 
 
 
