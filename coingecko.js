@@ -101,7 +101,7 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
        let coin = coining.item
         // console.log(coin)   
         let coinid = coin.id
-        console.log(coinid)
+        // console.log(coinid)
 
 
 
@@ -122,9 +122,9 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 
     .then(allData=>{
         allData.forEach(coinArray=>{
-            console.log(coinArray)
+            // console.log(coinArray)
             const coinData = coinArray[0];
-            console.log(coinData)
+            // console.log(coinData)
                   document.getElementById('namesandicons').innerHTML += `
         <li class="flexingnameandicon">
           <img src="${coinData.image}" />
@@ -136,7 +136,7 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
       let pricepercent = coinData.price_change_percentage_24h
 
                         document.getElementById('priceandchanges').innerHTML += `
-              <span class="coinpricechange">$${coinData.current_price}${
+              <span class="coinpricechange">$${(coinData.current_price).toLocaleString()}${
                 pricepercent > 0 
                   ? `<i class="bi bi-caret-up-fill">${pricepercent.toFixed(2)}%</i>` 
                   : `<i class="bi bi-caret-down-fill">${pricepercent.toFixed(2)}%</i>`
@@ -221,3 +221,56 @@ trending()
 //       .catch(err => console.error(err));
 //   })
 //   .catch(err => console.error(err));
+
+
+let dataarray = []
+
+
+
+fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1')
+  .then(res => res.json())
+  .then(data => {console.log(data)
+
+    data.forEach(datum=>{
+      // console.log(datum.price_change_percentage_24h)
+      dataarray.push({
+        coinname: datum.id,
+        coinimg:datum.image,
+        coinprice:datum.price_change_24h,
+        coinpercentage: datum.price_change_percentage_24h
+      })
+      // let eachdata = datum.price_change_percentage_24h
+          // if(dataarray.length < 3){
+
+    // }
+    // return [...dataarray.coinpercentage].sort((a,b)=>a-b).slice(0,3)
+    dataarray.sort((a,b)=>b.coinpercentage -a.coinpercentage)
+    })
+
+        //     let sorted =  [...dataarray].sort((a,b)=>b-a);
+        // console.log(sorted.slice(0,3))
+
+
+    // console.log(dataarray)
+// console.log(sorting(datum.price_change_percentage_24h))
+console.log(dataarray.slice(0,3))
+let datasliced = dataarray.slice(0,3)
+
+datasliced.forEach(gainersname =>{
+  console.log(gainersname.coinname)
+  document.getElementById('nameplace').innerHTML +=  `
+        <li class="flexingnameandicon">
+          <img src="${gainersname.coinimg}" />
+          <span class="coinname">${gainersname.coinname}</span>
+        </li>
+      `
+})
+
+  })
+
+  
+
+  // .catch(err=>{console.error('api fetch not working')})
+  .catch(err => console.error(err));
+
+  

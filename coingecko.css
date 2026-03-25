@@ -513,7 +513,7 @@ u{
 
 .box-1{
     /* background:red; */
-    width: 37vw;
+    width: 30vw;
     height: 8em;
     border-radius: 10px;
     border: 1px solid grey;
@@ -522,7 +522,7 @@ u{
 }
 
 .box-1> span{
-    position: relative; 
+    /* position: relative;  */
     /* top: 10px; */
    font-size: clamp(16px, 2vw, 20px);
     font-weight: bold;
@@ -534,23 +534,23 @@ u{
     font-weight: bold;
     font-size: 14px;
     color: grey;
-    position: relative;
-    top: 15%; 
+    /* position: relative; */
+    /* top: 15%;  */
 }
 /*first box green */
 .box-1 > div {
-    /* background-color: green; */
-    position: relative; 
-    left: 230px;
-    bottom: 44.5px;
-    width: 17em;
+    width: 13em;
+    margin-inline-end: 10px;
+    margin-block-start: -45px;
     height: 15vh;
+    display: flex;
+    justify-self: flex-end;
     
 }
 
 .box-2{
     /* background:red; */
-    width: 37vw;
+    width: 30vw;
     height: 8em;
     border-radius: 10px;
     border: 1px solid grey;
@@ -559,8 +559,8 @@ u{
 }
 
 .box-2> span{
-    position: relative; 
-    top: 10px;
+    /* position: relative; 
+    top: 10px; */
    font-size: clamp(16px, 2vw, 20px);
     font-weight: bold;
     color: rgb(38, 37, 37);
@@ -568,9 +568,6 @@ u{
 }
 
 .box-2 > span2{
-    position: relative;
-    top: 20px;
-    /* left: 10px; */
     font-weight: bold;
     font-size: 14px;
     color: grey;
@@ -578,12 +575,12 @@ u{
 
 /*second box red */
 .box-2 > div{
-    /* background-color: red; */
-    position: relative;
-    left: 230px;
-    bottom: 44px;
-    width: 17em;
+    width: 13em;
+    margin-inline-end: 10px;
+    margin-block-start: -45px;
     height: 15vh;
+    display: flex;
+    justify-self: flex-end;
 }
 
 
@@ -591,7 +588,7 @@ u{
 
 .box-3{
     height: 33vh;
-    width: 100%;
+    width: 40%;
     /* background:red; */
     border-radius: 10px;
     border: 1px solid grey;
@@ -623,8 +620,9 @@ u{
     gap: 8px;
 }
 .flexingnameandicon img{
-    max-width:20px;
+    max-width:25px;
     height: 20px;
+    width: 25px;
     margin-block-end: 12px;
 }
 
@@ -652,6 +650,8 @@ u{
     font-weight: 550;
     font-family: sans-serif;
     color: #0f172a;;
+    line-height:  50px;
+
 }
 
 /* span.top,.top2{
@@ -737,18 +737,41 @@ u{
 
 
 .box-4{
-     height: 28vh;
-    padding: 20px 10px ;
-    width: 32em;
+    height: 33vh;
+    width: 40%;
+    /* background:red; */
     border-radius: 10px;
     border: 1px solid grey;
-    display: grid;
-    align-items:center;
-    justify-content: center;
+    /* display: flex;
+    justify-content: space-between; */
+    padding:8px 10px;
+
 }
 
 
-.first-box4,.second-box4,.third-box4{
+.headerbox4{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    /* background:blue; */
+}
+
+
+.topgainccoinname{
+    width: 50%;
+    /* border:1px solid red; */
+    height: 90%;
+    display: grid;
+}
+
+
+
+/* .coinname{
+    font-size: 12px;
+    font-weight: 550;
+} */
+
+/* .first-box4,.second-box4,.third-box4{
     display:flex;
     justify-content: center;
     align-items:center;
@@ -797,7 +820,7 @@ u{
     width: 210px;
     margin: 0 auto;
     text-align: end;
-}
+} */
 
 
 
@@ -1092,23 +1115,18 @@ i.bi-caret-down-fill{
 
 /*second box red */
 
-canvas#mychart{
-    /* width: fit-content; */
-    width: 165px;
-    height: 78px;
+div.canvas{
+    width: 170px;
+    position: relative;
+    left: -1em;
+    top: -1.7px;
 }
 
-canvas#mychartBox2{
-    width: 165px;
-    height: 78px;
-}
-.box-2 > div{
-    /* background-color: red; */
+
+div.canvas2{
+        width: 170px;
     position: relative;
-    left: 510px;
-    bottom: 38px;
-    width: 17em;
-    height: 15vh;
+    left: -1em;
 }
 
 
@@ -1120,7 +1138,7 @@ canvas#mychartBox2{
 .box-3{
     /* height: fit-content; */
     /* padding: 20px 10px ; */
-    /* width: 86vw; */
+    width: 86vw;
     border-radius: 10px;
     border: 1px solid grey;
     display: flex;
@@ -1507,7 +1525,7 @@ a img{
 }
 
 .all-box img{
-    width: 5%;
+    width: 10%;
 }
 
 

@@ -6,34 +6,34 @@
 // let short = (numstr/1e9).toFixed(3)
 // // console.log(numstr.slice(0,3))
 
- const apiKey = "CG-M64VHYTiBjBmiaia8xqJtU1q";
-fetch('https://api.coingecko.com/api/v3/search/trending')
-  .then(res => res.json())
-  .then(data => {
-    // console.log(data);
+//  const apiKey = "CG-M64VHYTiBjBmiaia8xqJtU1q";
+// fetch('https://api.coingecko.com/api/v3/search/trending')
+//   .then(res => res.json())
+//   .then(data => {
+//     // console.log(data);
 
-    let coins = data.coins.slice(0,3);
-    // console.log(coins)
-
-
-    coins.forEach(coin=>{
-        coin = coin.item
-        console.log(coin)
+//     let coins = data.coins.slice(0,3);
+//     // console.log(coins)
 
 
-        // document.getElementById('testing').innerHTML += `<li class="flexing">${coin.name} <img src="${coin.small}" /> <span>$${(coin.data.price).toFixed(2)}</span></li>`
-        document.getElementById('testing').innerHTML += `
+//     coins.forEach(coin=>{
+//         coin = coin.item
+//         console.log(coin)
+
+
+//         // document.getElementById('testing').innerHTML += `<li class="flexing">${coin.name} <img src="${coin.small}" /> <span>$${(coin.data.price).toFixed(2)}</span></li>`
+//         document.getElementById('testing').innerHTML += `
         
         
-        <li class="flexing">${coin.name} <img src="${coin.small}" /> <span>$${(coin.data.price).toFixed(2)}</span></li>`
-    })
+//         <li class="flexing">${coin.name} <img src="${coin.small}" /> <span>$${(coin.data.price).toFixed(2)}</span></li>`
+//     })
 
 
 
-    // coins.forEach(coin => {
-    //   console.log(coin.item.name, coin.item.price_btc);
-    // });
-  });
+//     // coins.forEach(coin => {
+//     //   console.log(coin.item.name, coin.item.price_btc);
+//     // });
+//   });
 
 
 
@@ -103,6 +103,13 @@ fetch('https://api.coingecko.com/api/v3/search/trending')
 //   });
 
 // });
+
+
+let allnums = [2,3,4,22,1,0,5,6,,1,12,31,13,15,99,7,18,51]
+
+// for (let i =allnums.length;i<0;i++){
+  // console.log(allnums[i])
+// }
 
 
   
