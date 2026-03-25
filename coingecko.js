@@ -245,10 +245,9 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
     // }
     // return [...dataarray.coinpercentage].sort((a,b)=>a-b).slice(0,3)
     dataarray.sort((a,b)=>b.coinpercentage -a.coinpercentage)
+    
     })
-
-        //     let sorted =  [...dataarray].sort((a,b)=>b-a);
-        // console.log(sorted.slice(0,3))
+    // console.log(dataarray.sort((a,b)=>b.coinpercentage -a.coinpercentage))
 
 
     // console.log(dataarray)
@@ -263,8 +262,22 @@ datasliced.forEach(gainersname =>{
           <img src="${gainersname.coinimg}" />
           <span class="coinname">${gainersname.coinname}</span>
         </li>
-      `
+      `;
+
+      let gainerspricepercent =  gainersname.coinpercentage
+      console.log(gainerspricepercent)
+
+document.getElementById('priceandpercent').innerHTML +=   `
+              <span class="coinpricechange">$${(gainersname.coinprice).toLocaleString()}${
+                gainerspricepercent > 0 
+                  ? `<i class="bi bi-caret-up-fill">${gainersname.coinpercentage.toFixed(2)}%</i>` 
+                  : `<i class="bi bi-caret-down-fill">${gainersname.coinpercentage.toFixed(2)}%</i>`
+              }</span> 
+            `
 })
+
+
+
 
   })
 

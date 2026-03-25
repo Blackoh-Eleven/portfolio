@@ -745,7 +745,12 @@ u{
     /* display: flex;
     justify-content: space-between; */
     padding:8px 10px;
+    /* display: flex; */
 
+}
+
+.both{
+    display: flex;
 }
 
 
@@ -760,8 +765,17 @@ u{
 .topgainccoinname{
     width: 50%;
     /* border:1px solid red; */
-    height: 90%;
+    height: 30vh;
     display: grid;
+}
+
+
+.rightside{
+    /* border:1px solid orange;  */
+    width: 50%;
+    height: 30vh;
+    display: grid;
+    justify-content: flex-end;
 }
 
 
@@ -1251,6 +1265,12 @@ span.top{
 }
 
 
+.topgainccoinname{
+    display: grid;
+    gap: 20px;
+}
+
+
 .first-box4,.second-box4,.third-box4{
     display:flex;
     /* justify-content: center; */
@@ -1625,6 +1645,22 @@ li .flexingnameandicon{
 .box-4 img{
     width: 15%;
 }
+.topgainccoinname{
+    display: grid;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .first-box4,.second-box4,.third-box4{
     display:flex;
