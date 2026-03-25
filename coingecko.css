@@ -1164,10 +1164,23 @@ div.canvas2{
     border: 1px solid grey;
     display: flex;
     justify-content: space-between;
+    /* background:red; */
     /* display: grid; */
     /* gap: 100px; */
     /* justify-self: center; */
+}
 
+.viewtext{
+    /* color:blue; */
+    float: right;
+}
+
+/* might correct later */
+span.coinpricechange{
+    /* display: flex; */
+    height: fit-content;
+    /* background:red; */
+    height: 20px;
 }
 
 span.top{
@@ -1275,6 +1288,14 @@ span.top{
 .topgainccoinname{
     display: grid;
     gap: 20px;
+}
+
+
+/* mightcorrect later */
+span.coinpricechanges{
+    /* height: 20px; */
+    position: relative;
+    bottom: 10px;
 }
 
 
