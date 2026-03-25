@@ -769,6 +769,13 @@ u{
     display: grid;
 }
 
+#priceandpercent{
+        font-size: 12px;
+    font-weight: 550;
+    font-family: sans-serif;
+    color: #0f172a;;
+    line-height:  50px;
+}
 
 .rightside{
     /* border:1px solid orange;  */
@@ -1622,34 +1629,56 @@ li .flexingnameandicon{
 
 
 
-
-
-
-
-
-
-
-
-
 .box-4{
-    width: 86vw;
     height: fit-content;
-    border-radius: 10px;
-    border: 1px solid grey;
-    display: grid;
-    gap: 10px;
-    /* justify-self: center; */
+    width: 88vw;
+}
+
+#nameplace{
+    height: fit-content;
+}
+#priceandpercent{
+    height: fit-content;
+    /* border:1px solid orange; */
+    width: 50%;
     /* position: absolute; */
 }
+
+.coinpricechanges{
+    /* background: red; */
+    display: inline-flex;
+    height: 50px;
+    /* position: relative; */
+    /* right: 130%; */
+    width: 100px;
+    /* min-width: 100%; */
+
+}
+
+
+
+
+
+
+/* .box-4{
+    height: fit-content;
+    width: 88vw;
+}
+
 
 .box-4 img{
     width: 15%;
 }
 .topgainccoinname{
     display: grid;
-    gap: 20px;
+    gap: 5px;
 }
 
+.rightside{
+    width: 50%;
+    display: grid;
+    justify-content: flex-end;
+} */
 
 
 
@@ -1661,15 +1690,14 @@ li .flexingnameandicon{
 
 
 
+/* 
 
 .first-box4,.second-box4,.third-box4{
     display:flex;
-    /* justify-content: center; */
     align-items:center;
     position: relative;
     gap: 0px;
     width: 80vw;
-    /* left: 3%; */
 }
 .top2{
     display: flex;
@@ -1692,7 +1720,6 @@ li .flexingnameandicon{
     display: inline;
     width: 320px;
     font-size: 14px;
-    /* margin: 0 auto; */
     text-align: end;
 }
 
@@ -1708,7 +1735,6 @@ li .flexingnameandicon{
 .second-box4 span2{
     display: inline;
     width: 380px;
-    /* margin: 0 auto; */
     font-size: 14px;
     text-align: end;
 }
@@ -1728,8 +1754,7 @@ li .flexingnameandicon{
     display: inline;
     width: 380px;
     font-size: 14px;
-    /* font-weight: bold; */
-}
+} */
 
 
 

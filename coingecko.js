@@ -268,7 +268,7 @@ datasliced.forEach(gainersname =>{
       console.log(gainerspricepercent)
 
 document.getElementById('priceandpercent').innerHTML +=   `
-              <span class="coinpricechange">$${(gainersname.coinprice).toLocaleString()}${
+              <span class="coinpricechanges">$${(gainersname.coinprice).toLocaleString()}${
                 gainerspricepercent > 0 
                   ? `<i class="bi bi-caret-up-fill">${gainersname.coinpercentage.toFixed(2)}%</i>` 
                   : `<i class="bi bi-caret-down-fill">${gainersname.coinpercentage.toFixed(2)}%</i>`
