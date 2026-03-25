@@ -1177,10 +1177,9 @@ div.canvas2{
 
 /* might correct later */
 span.coinpricechange{
-    /* display: flex; */
     height: fit-content;
-    /* background:red; */
-    height: 20px;
+    line-height: 45px;
+
 }
 
 span.top{
@@ -1295,7 +1294,7 @@ span.top{
 span.coinpricechanges{
     /* height: 20px; */
     position: relative;
-    bottom: 10px;
+    bottom: 5px;
 }
 
 
@@ -1630,10 +1629,15 @@ a img{
     /* display: inline; */
     width: 100px;
     display: flex;
+    position: relative;
+    top: 5px;
+    /* line-height: 95px; */
     justify-content: flex-end;
     align-items:center;
     gap: 5px;
 }
+
+
 
 li .flexingnameandicon{
     text-align: right;
