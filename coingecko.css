@@ -516,7 +516,7 @@ u{
     width: 30vw;
     height: 8em;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -553,7 +553,7 @@ u{
     width: 30vw;
     height: 8em;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -591,7 +591,7 @@ u{
     width: 40%;
     /* background:red; */
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     display: flex;
     justify-content: space-between;
     padding:8px 10px;
@@ -741,7 +741,7 @@ u{
     width: 40%;
     /* background:red; */
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     /* display: flex;
     justify-content: space-between; */
     padding:8px 10px;
@@ -842,6 +842,98 @@ u{
     margin: 0 auto;
     text-align: end;
 } */
+
+
+
+
+
+.allcoinsection{
+    /* background:red; */
+    border-bottom:1px solid rgba(128, 128, 128, 0.199);
+    width: 94vw;
+    height: 20px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    left: 1%;
+    justify-self: center;
+    justify-content: space-between;
+    line-height: 20px;
+    text-wrap: nowrap;
+    
+}
+.coinsectionnav{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+    list-style: none;
+    
+}
+
+span.rect{
+    display: inline-flex;
+    width: 10px;
+    aspect-ratio:1/1;
+    /* height: 6px; */
+    background:gray;
+}
+.coinsectionnav li{
+    font-size: 10.5px;
+    font-weight: 550;
+}
+
+
+.fa-ranking-star{
+    color:#35af00;
+}
+
+.all{
+    color:#35af00;
+    background:#49d30e41;
+    /* padding:  12px 3px 3px 12px; */
+    border-radius:5px;
+    height: fit-content;
+    padding: 4px 10px;
+    position: relative;
+    bottom: 3px;
+    /* width: 38px; */
+}
+
+.sparkling{
+    background:rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    padding-bottom: 15px;
+    font-size: 11px;
+    font-weight: 550;
+    /* line-height: 10px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1073,7 +1165,7 @@ i.bi-caret-down-fill{
     width: 87vw;
     height: 8em;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -1111,7 +1203,7 @@ i.bi-caret-down-fill{
     justify-self: center;
     height: 8em;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -1161,7 +1253,7 @@ div.canvas2{
     /* padding: 20px 10px ; */
     width: 86vw;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     display: flex;
     justify-content: space-between;
     /* background:red; */
@@ -1277,7 +1369,7 @@ span.top{
     width: 86vw;
     height: fit-content;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgba(128, 128, 128, 0.11);
     display: grid;
     gap: 10px;
     justify-self: center;
@@ -1350,6 +1442,44 @@ span.coinpricechanges{
     font-size: 14px;
     margin: 0 auto;
     text-align: end;
+}
+
+
+
+.allcoinsection{
+    /* background:red; */
+    /* border-bottom:1px solid brown; */
+    width: 86vw;;
+    height: 20px;
+    padding: 10px;
+    margin-inline-end: 45px;
+    display: flex;
+   /* position: relative;
+    right: 0px;  */
+    /* transform: translateX(-14px); */
+    /* justify-self: center; */
+    justify-content: space-between;
+    line-height: 20px;
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    
+}
+
+.coinsectionnav{
+    gap: 20px;
+    /* overflow: hidden; */
+}
+
+.sparkling {
+  font-size: 0;
+  position: static;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sparkling i {
+  font-size: 14px;
 }
 
     
@@ -1539,16 +1669,6 @@ a img{
 
 
 
-
-
-
-
-
-
-
-
-
-
 .add-place{
     width: 90vw;
         position: relative;
@@ -1591,19 +1711,6 @@ a img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .first-twobox{
     display: none;
 }
@@ -1614,13 +1721,10 @@ a img{
 }
 
 #priceandchanges{
-    /* display: inline-flex; */
     width: 120px;
 }
 
 .viewtext{
-  /* background:blue; */
-    /* color:red; */
     width: 100px;
     float: inline-end;
 }
@@ -1666,126 +1770,36 @@ li .flexingnameandicon{
     height: fit-content;
     /* border:1px solid orange; */
     width: 50%;
-    /* position: absolute; */
 }
 
 .coinpricechanges{
-    /* background: red; */
     display: inline-flex;
     height: 50px;
-    /* position: relative; */
-    /* right: 130%; */
     width: 100px;
-    /* min-width: 100%; */
+
 
 }
 
 
 
-
-
-
-/* .box-4{
-    height: fit-content;
-    width: 88vw;
-}
-
-
-.box-4 img{
-    width: 15%;
-}
-.topgainccoinname{
-    display: grid;
-    gap: 5px;
-}
-
-.rightside{
-    width: 50%;
-    display: grid;
-    justify-content: flex-end;
-} */
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-.first-box4,.second-box4,.third-box4{
-    display:flex;
-    align-items:center;
-    position: relative;
-    gap: 0px;
-    width: 80vw;
-}
-.top2{
+.allcoinsection{
+    /* background:red; */
+    border-bottom:1px solid rgba(128, 128, 128, 0.199);
+    width: 94vw;
+    height: 20px;
+    padding: 10px;
+    padding-left: 30px;
     display: flex;
+    position: relative;
+    left: 1%;
+    justify-self: center;
     justify-content: space-between;
-    font-weight: 700;
-    font-size: 12px;
-    height: 25px;
+    line-height: 20px;
+    text-wrap: nowrap;
+
+    margin-block-start: 40px;
+    
 }
-
-
-.first-box4 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom:9px;
-}
-
-.first-box4 span2{
-    display: inline;
-    width: 320px;
-    font-size: 14px;
-    text-align: end;
-}
-
-
-.second-box4 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom:9px;
-}
-
-.second-box4 span2{
-    display: inline;
-    width: 380px;
-    font-size: 14px;
-    text-align: end;
-}
-
-
-
-
-.third-box4 span{
-    font-size: 14px;
-    font-weight: 500;
-    color:black;
-    position: relative;
-    bottom:5px;
-}
-
-.third-box4 span2{
-    display: inline;
-    width: 380px;
-    font-size: 14px;
-} */
-
-
-
-
-
-
 
 
 
@@ -1809,6 +1823,7 @@ li .flexingnameandicon{
 
 
 }
+
 
 
 

@@ -161,66 +161,6 @@ trending()
 
 
 
-    //     document.getElementById('namesandicons').innerHTML += `
-    //     <li class="flexingnameandicon">
-    //       <img  src="${coin.small}" />
-    //        <span class="coinname">${coin.name}</span>
-    //        </li>
-    //    `
-
-    //            document.getElementById('priceandchanges').innerHTML += `
-    //     <li class="flexingnameandicon">
-    //        <span class="coinprice">$${(coin.data.price).toFixed(2)}</span> 
-        
-    //        </li>
-    //    `
-
-
-
-    
-    // })
-// });
-
-
-
-
-// fetch('https://api.coingecko.com/api/v3/search/trending')
-//   .then(res => res.json())
-//   .then(data => {
-//     let coins = data.coins.slice(0, 3); // top 3 trending coins
-
-//     // fetch market data for each coin
-//     const promises = coins.map(coinWrapper => {
-//       const coin = coinWrapper.item; // extract the actual coin
-//       return fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${coin.id}`)
-//         .then(res => res.json());
-//     });
-
-//     // wait for all fetches
-//     Promise.all(promises)
-//       .then(allData => {
-//         // allData[i] corresponds to coins[i]
-//         allData.forEach((coinMarketData, index) => {
-//           const coin = coins[index].item; // original coin info
-//           const market = coinMarketData[0]; // market data from API
-
-//           document.getElementById('namesandicons').innerHTML += `
-//             <li class="flexingnameandicon">
-//               <img src="${coin.small}" />
-//               <span class="coinname">${coin.name}</span>
-//             </li>
-//           `;
-
-//           document.getElementById('priceandchanges').innerHTML += `
-//             <li class="flexingnameandicon">
-//               <span class="coinprice">$${market.current_price.toFixed(2)}</span>
-//             </li>
-//           `;
-//         });
-//       })
-//       .catch(err => console.error(err));
-//   })
-//   .catch(err => console.error(err));
 
 
 let dataarray = []
@@ -239,11 +179,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
         coinprice:datum.price_change_24h,
         coinpercentage: datum.price_change_percentage_24h
       })
-      // let eachdata = datum.price_change_percentage_24h
-          // if(dataarray.length < 3){
 
-    // }
-    // return [...dataarray.coinpercentage].sort((a,b)=>a-b).slice(0,3)
     dataarray.sort((a,b)=>b.coinpercentage -a.coinpercentage)
     
     })
