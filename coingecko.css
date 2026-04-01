@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    width: 100%;
+    width: 100vw;
     background:#ffffff;
     /* height: 100vh; */
     height: fit-content;
