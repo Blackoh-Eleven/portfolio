@@ -188,11 +188,11 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
 
     // console.log(dataarray)
 // console.log(sorting(datum.price_change_percentage_24h))
-console.log(dataarray.slice(0,3))
+// console.log(dataarray.slice(0,3))
 let datasliced = dataarray.slice(0,3)
 
 datasliced.forEach(gainersname =>{
-  console.log(gainersname.coinname)
+  // console.log(gainersname.coinname)
   document.getElementById('nameplace').innerHTML +=  `
         <li class="flexingnameandicon">
           <img src="${gainersname.coinimg}" />
@@ -201,7 +201,7 @@ datasliced.forEach(gainersname =>{
       `;
 
       let gainerspricepercent =  gainersname.coinpercentage
-      console.log(gainerspricepercent)
+      // console.log(gainerspricepercent)
 
 document.getElementById('priceandpercent').innerHTML +=   `
               <span class="coinpricechanges">$${(gainersname.coinprice).toLocaleString()}${
@@ -211,6 +211,31 @@ document.getElementById('priceandpercent').innerHTML +=   `
               }</span> 
             `
 })
+
+let coinnumber = 1
+
+console.log(data)
+
+data.forEach(mainname=>{console.log(mainname.id)
+
+
+  document.getElementById('maincoinlist').innerHTML += `
+
+        <li class="eachcoinprop">
+        <i class="fa-regular fa-star"></i> <span class="numlist">${coinnumber++}</span>
+        <span class="workon">
+          <img src="${mainname.image}" />
+          <span class="coinname">${mainname.name}   <span class="symbol">${mainname.symbol.toUpperCase()}</span></span>
+          </span>
+        </li>
+
+
+
+`
+})
+// let maincoinname = data.id
+// console.log(maincoinname)
+
 
 
 
