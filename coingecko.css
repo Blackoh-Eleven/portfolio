@@ -987,7 +987,7 @@ span.rect{
 .coinname .symbol{
     /* color:red; */
     font-weight: normal;
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
@@ -1070,14 +1070,15 @@ span.rect{
     .add-place{
         /* display: none; */
         position: relative;
-        top: 18%;
+        top: 1%;
+        width: 70vw;
     }
 
 
     .nav-area{
         height: 20px;
         position: relative;
-        top: 28%;
+        top: 1.5%;
         border-top:1px solid rgba(196, 193, 193, 0.3);
     }
 
@@ -1130,6 +1131,8 @@ i.bi-caret-down-fill{
     .nav2{
         padding: 5px 20px;
         border:none;
+        /* background:red; */
+        margin-block-start: -10px;
     }
 
 
@@ -1213,7 +1216,7 @@ i.bi-caret-down-fill{
 
 .header-place{
     position: relative;
-    top: 20%;
+    top: 1%;
 }
 
 
@@ -1270,10 +1273,8 @@ i.bi-caret-down-fill{
 /*first box green */
 .box-1 > div {
     /* background-color: green; */
-    position: relative; 
-    left: 510px;
-    bottom: 42.5px;
-    width: 17em;
+    float: right;
+    width: 70em;
     height: 17vh;
     
 }
@@ -1312,15 +1313,20 @@ i.bi-caret-down-fill{
 div.canvas{
     width: 170px;
     position: relative;
-    left: -1em;
-    top: -1.7px;
+    /* left: -1em; */
+    top: 40%;
 }
 
 
 div.canvas2{
         width: 170px;
-    position: relative;
-    left: -1em;
+        /* background:red; */
+        float: right;
+        position: relative;
+        top: 40%;
+
+    /* position: relative; */
+    /* left: -1em; */
 }
 
 
@@ -1626,9 +1632,10 @@ span.coinpricechanges{
     .nav-area{
         width: 100%;
         display: flex;
-        top:12%;
+        top:0.8%;
         padding: 5px 0;
         align-items:center;
+        /* background:red; */
         /* justify-content: center; */
     }
 
@@ -1701,6 +1708,8 @@ span.coinpricechanges{
     .nav2{
         width: unset;
         gap: 0px;
+        /* background:red; */
+        margin-block-start: -8%;
     }
 
 a img{
@@ -1743,6 +1752,7 @@ a img{
     align-items:center;
     transform: translate(290%,20%);
     height: 23px;
+    text-wrap: nowrap;
 }
 
 
@@ -1753,23 +1763,23 @@ a img{
 .add-place{
     width: 90vw;
         position: relative;
-        top: 8%;
+        top:0.6%;
+        /* top: %; */
 
 }
 
 .header-place{
     position: relative;
-    top: 7%;
+    top: 0.5%;
     display: block;
     /* background:blue; */
-
 
 }
 
 
 .all-box{
     position: relative;
-    top: 5%;
+    top: 0%;
 }
 
 .all-box img{
@@ -1877,9 +1887,41 @@ li .flexingnameandicon{
     justify-content: space-between;
     line-height: 20px;
     text-wrap: nowrap;
-
-    margin-block-start: 40px;
+    margin-block-start: -5px;
     
+}
+
+.coinnavlist{
+    /* background:red; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* gap: 150px; */
+    align-items:center;
+    line-height: 10px;
+    /* width: fit-content; */
+    /* align-items:center; */
+}
+
+#static{
+    display: flex;
+    /* background:red; */
+    margin-inline-start: 5%;
+    /* position: static; */
+    gap: 2px;
+    width: fit-content;
+}
+
+#scroll{
+    margin-inline-start: 30%;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* background:red; */
+    align-items:center;
+    text-wrap: nowrap;
+}
+
+#scroll::-webkit-scrollbar {
+  display: none;
 }
 
 
