@@ -1036,6 +1036,7 @@ canvas.eachchart {
         z-index: 2;
         background:#fff;
         /* background: blue; */
+        width: 7em;
     }
 
     th:nth-child(2),
@@ -1045,6 +1046,10 @@ canvas.eachchart {
         z-index: 2;
         background:#fff;
         /* background: blue; */
+    }
+
+        .workon img{
+        width: 10%;
     }
     td i.bi.bi.bi-caret-down-fill,td i.bi.bi.bi-caret-up-fill{
     font-size: 12px;
