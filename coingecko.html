@@ -13,6 +13,9 @@
     <div class="spacetaker"></div>
     <div class="container">
 
+
+        <div class="rearrange">
+
         <div class="nav-area">
             <nav class="nav-wrapper">
         <nav class="nav-list">
@@ -32,6 +35,7 @@
             <li><button class="signup-button">sign up</button></li>
      </div>
     </div>
+        
 
 
 <nav class="nav2">
@@ -67,6 +71,8 @@
         </nav>
         
     </nav>
+
+        </div>
 
 
 
@@ -215,28 +221,109 @@
     </nav>
     <aside class="sparkling"><i class="fa-solid fa-wand-sparkles"></i>Customize</aside>
 </div>
+<div class="coinnavlistcontainer">
+<!-- <div class="coinnavlist"> -->
 
-<div class="coinnavlist">
-
-    <nav id="static">
+    <!-- <nav id="static">
     <i class="fa-solid fa-caret-up">#</i>
-    <li>coin</li>
-    </nav>
+    <li>Coin</li>
+    </nav> -->
 
-    <nav id="scroll">
-    <li>Price</li>
+    <!-- </div> -->
+
+
+    <!-- <div class="scrolling"> -->
+
+    <!-- <nav id="scroll">
+    <li class="price">Price</li>
     <li>1h</li>
     <li>24h</li>
     <li>7d</li>
     <li>24h Volume</li>
     <li>Market Cap</li>
     <li>Last 7 Days</li>
-    </nav>
+    </nav> -->
+<!-- 
+    <table>
+        <tr>
+        <th><i class="fa-solid fa-caret-up">#</i></th>
+        <th>Coins</th> -->
+        <!-- <th>Price</th> -->
+        <!-- <th>1h</th>
+        <th>24h</th>
+        <th>7d</th>
+        <th>24h Volume</th>
+        <th>market Cap</th>
+        <th>Last 7 Days</th> -->
+        <!-- </tr> -->
+
+        <!-- <tr>
+            <td class="serialnumber" id="serialnumber">john</td>
+            <td>20</td>
+        </tr>
+    </table> -->
+
+
+    <table>
+    <thead>
+        <tr>
+            <th class="number"><i class="fa-solid fa-caret-up">#</i></th>
+            <th class="coinspace">Coins</th>
+            <th>Price</th>
+            <th>1hr</th>
+            <th>24h</th>
+            <th>7d</th>
+            <th>24h volume</th>
+            <th>Market Cap</th>
+            <th>last 7 Days</th>
+        </tr>
+    </thead>
+
+    <tbody id="tablebody">
+
+    </tbody>
+</table>
     
+</div>
 </div>
 
 
+ <div class="alltable">
+
+
 <div class="maincoinlist" id="maincoinlist">
+
+</div>
+
+   <div class="alltablecontainer">
+  <div class="allprice" id="allprice">
+
+</div>
+
+<div class="all1hour" id="all1hour">
+
+</div>
+
+<div class="all24hour" id="all24hour">
+
+</div>
+
+<div class="all7days" id="all7days">
+
+</div>
+
+<div class="all24hvol" id="all24hvol">
+
+</div>
+
+<div class="allmarketcap" id="allmarketcap">
+
+</div>
+
+<div class="last7days" id="last7days">
+
+</div> 
+</div>
 
 </div>
 
@@ -265,8 +352,11 @@ let move = 0 -->
 // }) -->
 <!-- //     </script> -->
 
+<!-- <canvas id="chart-${mainname.id}" width="100" height="40"></canvas> -->
 
 <script src="coingecko.js"></script>
 <script src="chart.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
